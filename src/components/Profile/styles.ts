@@ -56,7 +56,6 @@ const pointer = keyframes`
   transform: translateX(7%)
 }
 `
-
 export const ProfileContainer = styled.div`
   display: flex;
   justify-content: space-between;

@@ -27,6 +27,7 @@ export const SectionContainer = styled.div`
     }
   }
   @media (max-width: 600px){
+    margin-bottom: 70px;
     .and-icone{
       left: 25%;
       width: 96%;
