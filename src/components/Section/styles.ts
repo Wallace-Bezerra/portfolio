@@ -16,7 +16,6 @@ export const SectionContainer = styled.div`
   @media (max-width: 1180px){
     flex-direction: column;
     align-items: center;
-    /* width: fit-content; */
     margin-inline: auto;
     margin-block: 120px;
     .and-icone{

@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
 html,
 body {
+  scroll-behavior: smooth;
   min-height:100vh;
   /* width */
 ::-webkit-scrollbar {

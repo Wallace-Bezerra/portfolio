@@ -1,7 +1,7 @@
 'use client'
 import { styled, css } from "styled-components";
 interface ButtonStyled {
-  variant: "primary" | "outlined"
+  variant: "primary" | "outlined" | "view" | "repo"
 }
 export const Button = styled.a<ButtonStyled>`
   display: inline-flex;
@@ -17,22 +17,7 @@ export const Button = styled.a<ButtonStyled>`
       background-color:#2159C1;
     }
   }
-  ${({ variant }) => {
-  return variant === "primary" ? css`
-   background: linear-gradient(131deg, #3698C9 1.59%, #28CC87 100%);
-   &:hover{
-      filter: drop-shadow(0px 0px 8px #30ABB0);
 
-    }
-  ` :  css`
-    border-radius: 10px;
-    border: 1px solid #FFF;
-    background-color: transparent;
-    &:hover{
-      background: #374151;
-    }
-  `}}
-  color: #FFF;
   font-family: Rubik;
   font-size: 32px;
   font-style: normal;
@@ -42,6 +27,57 @@ export const Button = styled.a<ButtonStyled>`
   &:hover{
     transform: scale(1.02);
   }
+  ${({ variant }) => {
+    return variant === "primary" && css`
+   background: linear-gradient(131deg, #3698C9 1.59%, #28CC87 100%);
+   color: #FFF;
+   &:hover{
+      filter: drop-shadow(0px 0px 8px #30ABB0);
+    }
+  `}}
+
+  ${({ variant }) => {
+    return variant === "outlined" && css`
+   border-radius: 10px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: transparent;
+    &:hover{
+      background: #374151;
+    }
+  `}}
+
+  ${({ variant }) => {
+    return variant === "view" && css`
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background:  #FFF;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.639px; 
+    &:hover{
+      transform: scale(1.03);
+      box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.25);
+    }
+  `}}
+
+  ${({ variant }) => {
+    return variant === "repo" && css`
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.639px; 
+    &:hover{
+      transform: scale(1.03);
+      background: #374151;
+      /* box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.25); */
+    }
+  `}}
+   
   @media (max-width: 1080px){
     padding: 10px 20px;
     font-size: 28px;

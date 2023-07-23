@@ -29,6 +29,9 @@ export const ContainerTech = styled.div`
     }
   }
   @media (max-width:640px){
+    .tech{
+      margin-bottom: 60px;
+    }
     .title{
       text-align: start;
     }
