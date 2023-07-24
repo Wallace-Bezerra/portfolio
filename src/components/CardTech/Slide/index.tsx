@@ -18,7 +18,7 @@ export const Slide = ({ tech, className }: SlideProps) => {
         return (
           <>
             <Item item={item} isActive={active === index} setActive={setActive} index={index} />
-            <div className={className}>
+            <li className={className}>
               <div id={`tech-${index + 1}`} className={`${tech[active].name === tech[index].images[0].nameImage ? "" : "active"}`}>
                 {item.images.map((image) => {
                   return (
@@ -26,7 +26,7 @@ export const Slide = ({ tech, className }: SlideProps) => {
                   )
                 })}
               </div>
-            </div>
+            </li>
           </>
         )
       })}

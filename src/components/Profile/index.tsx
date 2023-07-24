@@ -21,7 +21,7 @@ export const Profile = () => {
         </S.Contact>
       </div>
       <S.ProfileUser>
-        <Image className="profile" src="/profile.png" width={1080} height={800} quality={100} alt="profile" />
+        <Image className="profile" src="/profile.png" width={600} height={400} priority alt="profile" />
         <S.Spinner>
           <Image className="name-spinner" src='/name-Spinner.png' width={240} height={240} alt="Wallace Bezerra" />
           <Image className="logo-spinner" src='/logo.svg' width={75} height={26} alt="" />
