@@ -1,4 +1,3 @@
-'use client'
 import { Tech } from './types'
 import * as S from './styles'
 import Image from 'next/image'
@@ -22,7 +21,7 @@ export const Slide = ({ tech, className }: SlideProps) => {
               <div id={`tech-${index + 1}`} className={`${tech[active].name === tech[index].images[0].nameImage ? "" : "active"}`}>
                 {item.images.map((image) => {
                   return (
-                    <Image key={image.src} src={image.src} width={image.width} height={image.height} alt={image.alt} />
+                    <Image key={image.src} src={image.src} width={image.width} height={image.height} priority alt={image.alt} />
                   )
                 })}
               </div>

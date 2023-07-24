@@ -24,6 +24,11 @@ export const ContainerContact = styled.div`
     font-weight: 400;
     line-height: normal;
   }
+  .contacts{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
   @media (max-width: 890px){
 
     h2{

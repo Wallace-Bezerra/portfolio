@@ -1,5 +1,5 @@
-import { CardTech } from "../CardTech"
 import * as S from "./styles"
+import { CardTech } from "../CardTech"
 
 export const Tech = () => {
   return (

@@ -1,7 +1,6 @@
-
+import * as S from "./styles"
 import { Button } from '../Button'
 import Image from 'next/image'
-import * as S from "./styles"
 export const Profile = () => {
   return (
     <S.ProfileContainer>
@@ -13,7 +12,7 @@ export const Profile = () => {
           <Image className='vscode-background' src="/vscode-background.svg" width={400} height={400} alt='' />
         </S.Emphasis>
         <S.Contact>
-          <Button href="#" target="_blank" variant="primary">Contate-me</Button>
+          <Button href="https://api.whatsapp.com/send?phone=5511965035851&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato." target="_blank" variant="primary">Contate-me</Button>
           <div className='group-button'>
             <Button href="https://github.com/Wallace-Bezerra" target="_blank" variant="outlined">GitHub</Button>
             <Button id="linkedin" href="https://www.linkedin.com/in/wallace-bezerra/" target="_blank" variant="outlined"><Image src="./linkedin.svg" width="36" height="36" alt="icone" /></Button>

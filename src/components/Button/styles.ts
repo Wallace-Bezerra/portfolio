@@ -17,6 +17,20 @@ export const Button = styled.a<ButtonStyled>`
       background-color:#2159C1;
     }
   }
+  &#instagram{
+    padding: 16px;
+    &:hover{
+      transform: scale(1.04);
+      background-color:#E51F66;
+    }
+  }
+  &#github{
+    padding: 16px;
+    &:hover{
+      transform: scale(1.04);
+      background-color:#000000;
+    }
+  }
 
   font-family: Rubik;
   font-size: 32px;
@@ -89,7 +103,7 @@ export const Button = styled.a<ButtonStyled>`
     padding: 11px 12px;
     font-size: 24px;
     height: 100%;
-    &#linkedin{
+    &#linkedin,&#instagram,&#github {
       width: 52px;
       height: 52px;
       img{
@@ -102,7 +116,7 @@ export const Button = styled.a<ButtonStyled>`
     padding: 10px 28px;
     height: 46px;
     border-radius: 6px;
-    &#linkedin{
+    &#linkedin,&#instagram,&#github{
       border-radius: 6px;
       width: 46px;
       height: 46px;
