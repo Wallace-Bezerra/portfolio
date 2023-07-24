@@ -7,7 +7,6 @@ export const ContainerTech = styled.div`
       gap: 30px;
       justify-content: space-between;
       margin-bottom: 150px;
-      align-items: center;
     }
   h2{
     display: flex;
@@ -20,20 +19,15 @@ export const ContainerTech = styled.div`
  
   }
   @media (max-width:1180px){
+    max-width: max-content;
+    margin: 0 auto;
     .tech{
     flex-direction: column-reverse;
-    }
-    
-    .title{
-      text-align: center;
     }
   }
   @media (max-width:640px){
     .tech{
       margin-bottom: 60px;
-    }
-    .title{
-      text-align: start;
     }
   }
 `

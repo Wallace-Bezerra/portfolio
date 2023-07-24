@@ -30,7 +30,7 @@ export const Header = () => {
           activeClass='active'
           smooth={true}
           spy={true}
-          offset={0}
+          offset={-60}
         >
           Sobre
         </Link>

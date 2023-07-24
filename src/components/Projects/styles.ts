@@ -1,7 +1,7 @@
 'use client'
 import styled from "styled-components";
 export const ContainerProjects = styled.div`
-margin-block: 100px;
+margin-top: 100px;
 text-align: center;
 .title{
   margin-bottom: 100px;
@@ -23,15 +23,11 @@ text-align: center;
 }
  
   @media (max-width: 700px){
-    margin-block: initial;
-    margin-bottom: 60px;
+    margin-top: initial;
     .title{
-      margin-bottom: initial;
+      margin-bottom: 20px;
     }
   }
-  /* @media (max-width: 500px){
-    margin-block: initial;
-  } */
 `
 export const SwiperWrapper = styled.div`
     margin-top: 40px;
