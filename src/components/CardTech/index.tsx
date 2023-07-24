@@ -147,7 +147,6 @@ export const CardTech = () => {
   const [slideLength, setSlideLength] = useState(3)
   const [slideState, setSlideState] = useState(0);
   const [inactive, setInactive] = useState(false);
-  console.log(slideState)
   return (
     <S.ContainerCardTech>
       <S.SliderWrapper state={slideState}>

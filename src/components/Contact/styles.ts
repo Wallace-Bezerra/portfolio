@@ -8,19 +8,43 @@ export const ContainerContact = styled.div`
   text-align: center;
   gap: 30px;
   justify-content: center;
+  margin-bottom: 150px;
   h2{
     color: #7C8999;
-  font-family: Rubik;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
   }
   p{
     color: #FFF;
     font-family: Rubik;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
+  }
+  @media (max-width: 890px){
+
+    h2{
+      font-size: 32px;
+      max-width: 420px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 600px){
+    margin-bottom: 110px;
+  }
+  @media (max-width: 400px){
+    
+    h2{
+      font-size: 26px;
+    }
+    p{
+      font-size: 18px;
+    }
   }
 `

@@ -1,11 +1,11 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 
 export const GlobalStyle = createGlobalStyle`
-:root {
-  /* max-width: 1100px; */
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
 
 html,
 body {
-  scroll-behavior: smooth;
   min-height:100vh;
   /* width */
 ::-webkit-scrollbar {

@@ -15,7 +15,7 @@ export const ContainerCard = styled.div`
     object-fit: cover;
     object-position: top;
     cursor: grab;
-    transition:  object-position .7s;
+    transition:  object-position 1.2s;
     &:hover{
       object-position: bottom;
     }
@@ -27,7 +27,6 @@ export const ContainerCard = styled.div`
       height: 100%;
       background: #252933;
       padding: 20px 40px;
-      align-items: center;
       justify-content: center;
       border-end-start-radius: 30px;
       border-end-end-radius: 30px;

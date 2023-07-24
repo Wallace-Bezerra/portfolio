@@ -1,7 +1,5 @@
 'use client'
-import { Swiper as Slider, SwiperSlide } from 'swiper/react';
-import { styled } from "styled-components";
-
+import styled from "styled-components";
 export const ContainerProjects = styled.div`
 margin-block: 100px;
 text-align: center;
@@ -25,11 +23,15 @@ text-align: center;
 }
  
   @media (max-width: 700px){
-    /* margin-block: initial; */
+    margin-block: initial;
+    margin-bottom: 60px;
     .title{
       margin-bottom: initial;
     }
   }
+  /* @media (max-width: 500px){
+    margin-block: initial;
+  } */
 `
 export const SwiperWrapper = styled.div`
     margin-top: 40px;
@@ -39,7 +41,7 @@ export const SwiperWrapper = styled.div`
       margin-inline: 20px;
     }
 `
-export const Swiper = styled(Slider)`
+export const ContainerSwiper = styled.div`
   overflow: clip visible;
   width: 100%;
   height:680px;
@@ -72,6 +74,15 @@ export const Swiper = styled(Slider)`
         }
       }
     }
+    .swiper-slide{
+      border-radius: 30px;
+      text-align: start;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .7s;
+    }
  @media (max-width: 800px){
   .swiper-pagination{
     justify-content: center;
@@ -82,13 +93,4 @@ export const Swiper = styled(Slider)`
  @media (max-width: 800px){
   height: initial;
  }
-`
-export const Slide = styled(SwiperSlide)`
- border-radius: 30px;
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all .7s;
 `

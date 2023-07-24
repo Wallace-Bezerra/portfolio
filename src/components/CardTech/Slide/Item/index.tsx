@@ -1,15 +1,19 @@
-
 import * as S from './styles'
+import { Tech } from '../types'
 
-// eslint-disable-next-line react/display-name
-export const Item = ({ item, index, setActive, active, isActive, onClick }: any) => {
+interface ItemProps {
+  item: Tech
+  index: number
+  setActive: (index: number) => void
+  isActive: boolean
+}
+export const Item = ({ item, index, setActive, isActive }: ItemProps) => {
   return (
     <S.Item onClick={() => {
       setActive(index)
     }} className={`${isActive ? 'active' : ''}`}>
-      {item.name === "Styled Components" ? item.name.split(" ").map((i: any) => {
-        // eslint-disable-next-line react/jsx-key
-        return (<div>
+      {item.name === "Styled Components" ? item.name.split(" ").map((i: string, index: number) => {
+        return (<div key={`styled ${index}`}>
           {i}
         </div>
         )

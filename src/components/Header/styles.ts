@@ -31,6 +31,12 @@ export const Navbar = styled.nav`
   border-radius: 39px;
   background: rgba(217, 217, 217, 0.08);
   backdrop-filter: blur(19.5px);
+  a{
+    &.active{
+      transition: all .5s;
+      color: #3DD8BC;
+    }
+  }
   @media (max-width:600px){
     padding: 20px 30px;
     font-size: 14px;

@@ -11,13 +11,13 @@ interface SlideProps {
 }
 export const Slide = ({ tech, className }: SlideProps) => {
   const [active, setActive] = useState(0);
-  
+
   return (
     <S.Slider>
       {tech.map((item, index) => {
         return (
           <>
-            <Item item={item} isActive={active === index} setActive={setActive} active={active} index={index} />
+            <Item item={item} isActive={active === index} setActive={setActive} index={index} />
             <div className={className}>
               <div id={`tech-${index + 1}`} className={`${tech[active].name === tech[index].images[0].nameImage ? "" : "active"}`}>
                 {item.images.map((image) => {
