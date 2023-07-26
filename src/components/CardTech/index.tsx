@@ -4,6 +4,7 @@ import { Slide } from './Slide'
 import { Tech } from './Slide/types'
 import * as S from './styles'
 import { useState } from 'react'
+import { fadeIn } from '@/lib/variants'
 
 const tech1: Tech[] = [
   {
@@ -148,7 +149,11 @@ export const CardTech = () => {
   const [slideState, setSlideState] = useState(0);
   const [inactive, setInactive] = useState(false);
   return (
-    <S.ContainerCardTech>
+    <S.ContainerCardTech
+      variants={fadeIn("up", 0.6)}
+      initial={"hidden"}
+      whileInView={'show'}
+      viewport={{ once: true }}>
       <S.SliderWrapper state={slideState}>
         <Slide className='tech-images-1' tech={tech1} />
         <Slide className='tech-images-2' tech={tech2} />

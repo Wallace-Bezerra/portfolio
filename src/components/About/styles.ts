@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
 export const ContainerAbout = styled.div`
@@ -27,9 +28,12 @@ export const ContainerAbout = styled.div`
     flex-wrap: wrap;
   }
   @media (max-width:1150px){
-    margin: 0 auto;
+    margin-inline: auto;
     max-width: max-content;
     margin-bottom: 120px;
+    .about{
+      display: initial;
+    }
     img{
       display: none;
     }
@@ -39,7 +43,7 @@ export const ContainerAbout = styled.div`
     margin-bottom: 80px;
   }
 `
-export const AboutCard = styled.div`
+export const AboutCard = styled(motion.div)`
   max-width: 692px;
   min-height: 509px;
   padding: 42px;
@@ -81,11 +85,11 @@ export const AboutCard = styled.div`
   }
   @media (max-width: 700px){
     padding: 20px;
-
     padding-bottom: 30px;
     span{
       padding: 10px 20px;
       font-size: 18px;
+      margin-bottom: 30px;
     }
     p{
       font-size: 16px;

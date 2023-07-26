@@ -26,7 +26,7 @@ export const ContainerCard = styled.div`
       gap: 20px;
       height: 100%;
       background: #252933;
-      padding: 20px 40px;
+      padding: 40px 40px;
       justify-content: center;
       border-end-start-radius: 30px;
       border-end-end-radius: 30px;

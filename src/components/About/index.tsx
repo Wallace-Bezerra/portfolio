@@ -1,14 +1,33 @@
+'use client'
+import { fadeIn } from "@/lib/variants"
 import * as S from "./styles"
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 export const About = () => {
   const year = new Date().getFullYear()
   return (
     <S.ContainerAbout id="sobre">
-      <h2>Sobre mim</h2>
+      <motion.h2
+        variants={fadeIn("up", 0.4)}
+        initial={"hidden"}
+        whileInView={'show'}
+        viewport={{ once: true }}>Sobre mim</motion.h2 >
       <div className="about">
-        <Image src="/about-image.jpg" width={400} height={500} priority alt="" />
-        <S.AboutCard>
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial={"hidden"}
+          whileInView={'show'}
+          viewport={{ once: true }}
+        >
+          <Image src="/about-image.jpg" width={600} height={400} quality={100} priority alt="" />
+        </motion.div>
+        <S.AboutCard
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={'show'}
+          viewport={{ once: true }}
+        >
           <span> São Paulo - SP</span>
           <div>
             <p>

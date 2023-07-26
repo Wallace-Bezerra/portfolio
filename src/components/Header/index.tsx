@@ -1,13 +1,16 @@
 'use client'
-import Image from 'next/image'
 import * as S from "./styles"
-// import Link from 'next/link'
+import Image from 'next/image'
 import { Link } from 'react-scroll';
+import { fadeIn } from '@/lib/variants';
 
 export const Header = () => {
   return (
-    <S.ContainerHeader id="home">
-      <Image src="./logo.svg" width="126" height="42" alt='logo' />
+    <S.ContainerHeader id="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      <Image src="./logo.svg" width="126" height="42" alt='logo' priority />
       <S.Navbar>
         <Link
           to='home'

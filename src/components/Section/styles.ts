@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
 export const SectionContainer = styled.div`
@@ -12,6 +13,10 @@ export const SectionContainer = styled.div`
     top: -5%;
     width: 50%;
     height: 27%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
   @media (max-width: 1180px){
     flex-direction: column;
@@ -64,7 +69,7 @@ export const TopicsContainer = styled.div`
     }
     p{
       color: #A6AEB8;
-      font-size: 20px;
+      font-size: 23px;
       font-weight: 400;
       line-height: 140%;
       letter-spacing: -0.117px;
@@ -72,7 +77,7 @@ export const TopicsContainer = styled.div`
   }
 }
 `
-export const VsCode = styled.div`
+export const VsCode = styled(motion.div)`
   margin-top: 20px;
   padding-right: 108px;
   .image-container{

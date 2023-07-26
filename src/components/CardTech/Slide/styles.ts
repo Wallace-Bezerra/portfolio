@@ -7,7 +7,8 @@ export const Slider = styled.ul`
   height: 100%;
   color: #FFF;
   font-family: Rubik;
-  font-size: max(1.8vw,1.2rem);
+  /* font-size: max(1.8vw,1.2rem); */
+  font-size: 32px;
   font-weight: 400;
   line-height: 140%;
   text-transform: uppercase;
@@ -232,14 +233,18 @@ export const Slider = styled.ul`
           &:first-child{
             position: relative;
             top: 53px;
-            right: 135px;  
-            width: 162%;
+            right: 150px;
+            width: 150%;
             height: 100%;
           }
       }
     }
 }
+@media (max-width:660px){
+  font-size: 26px;
+}
 @media (max-width:500px){
+  font-size: 26px;
   .tech-images-1,.tech-images-2,.tech-images-3{
     #tech-1,#tech-2,#tech-3{
       width: 130px;
@@ -293,16 +298,29 @@ export const Slider = styled.ul`
       right: -47px;
     }
     #tech-2{
-      width: 100%;
+      width: 160px;
+      height: 160px;
       position: relative;
       right: -50px;
+      img:first-child{
+        width: 100%;
+        height: 100%;
+      }
     }
     #tech-3{
-      width: 100%;
+      width: 120px;
+      height: 120px;
       position: relative;
       right: -50px;
       top: -29px;
+      img:first-child{
+        width: 150px;
+        right: 79px;
+      }
     }
   }
+}
+@media (max-width:420px){
+  font-size: 20px;
 }
 `

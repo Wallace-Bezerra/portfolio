@@ -1,5 +1,6 @@
 'use client'
 import { styled, css } from "styled-components";
+
 interface ButtonStyled {
   variant: "primary" | "outlined" | "view" | "repo"
 }

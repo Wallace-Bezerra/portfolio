@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
-export const ContainerHeader = styled.header`
+export const ContainerHeader = styled(motion.header)`
   display: flex;
   max-width: 1280px;
   justify-content: space-between;
@@ -32,10 +33,16 @@ export const Navbar = styled.nav`
   background: rgba(217, 217, 217, 0.08);
   backdrop-filter: blur(19.5px);
   a{
+    transition: all .5s;
     &.active{
       transition: all .5s;
       color: #3DD8BC;
     }
+    &:not(&.active):hover{
+      color: #3DD8BC;
+      opacity: 0.6;
+    }
+    
   }
   @media (max-width:600px){
     padding: 20px 30px;

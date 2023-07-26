@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, HashNavigation, Keyboard } from 'swiper/modules';
 import Image from "next/image"
 import { Card, CardProject } from "./Card";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 
 const projects: CardProject[] = [
   {
@@ -12,7 +14,7 @@ const projects: CardProject[] = [
     src: '/projects/dsf-project.png',
     tag: "UI-UX  -  Next JS  -  Sass",
     title: "Landing Page Digital Bank",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Landing Page simples com algumas animações e efeitos.",
     urlRepo: "https://github.com/Wallace-Bezerra/dsf-bank-ThreeJs",
     urlView: "https://dsf-bank-three-js.vercel.app/",
   },
@@ -21,7 +23,7 @@ const projects: CardProject[] = [
     src: '/projects/travel-project.jpg',
     tag: "UI-UX  -  Next JS - TypeScript  -  Tailwind",
     title: "Site Reserva de hospedagens",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Projeto Fullstack site de busca de viagens e hospedagens!",
     urlRepo: "https://github.com/Wallace-Bezerra/trips-app",
     urlView: "https://travelnest-app-web.vercel.app/",
   },
@@ -30,7 +32,7 @@ const projects: CardProject[] = [
     src: '/projects/homeyou-project.jpg',
     tag: "UI-UX  -  Sass - Javascript",
     title: "Landing Page HomeYou",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Landing Page moderna de uma imobiliaria.",
     urlRepo: "https://github.com/Wallace-Bezerra/HomeYou",
     urlView: "https://wallace-bezerra.github.io/HomeYou/",
   },
@@ -39,7 +41,7 @@ const projects: CardProject[] = [
     src: '/projects/eukatie-project.jpg',
     tag: "UI-UX - React  -  Styled Components",
     title: "LinkTree Personalizado",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Site com links personalizados e descrições.",
     urlRepo: "https://github.com/Wallace-Bezerra/katieLinks",
     urlView: "https://eukatie.vercel.app/",
   },
@@ -48,7 +50,7 @@ const projects: CardProject[] = [
     src: '/projects/mini-blog-project.jpg',
     tag: "UI-UX  |  React |  Sass",
     title: "MiniBlog",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Projeto feito para publicarmos posts, nele podemos criar uma conta e postar sobre qualquer assunto.",
     urlRepo: "https://github.com/Wallace-Bezerra/miniBlog",
     urlView: "https://mini-blog-gamma.vercel.app/",
   },
@@ -57,7 +59,7 @@ const projects: CardProject[] = [
     src: '/projects/git-api-projects.jpg',
     tag: "UI-UX  -  React  - TypeScript -  Styled Components",
     title: "GitHub Api",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Esse é o GitApi nele podemos acessar e exibir dados de usuários do GitHub usando a API do GitHub.",
     urlRepo: "https://github.com/Wallace-Bezerra/GitHub-Api",
     urlView: "https://git-hub-api-wallace.vercel.app/",
   },
@@ -66,7 +68,7 @@ const projects: CardProject[] = [
     src: '/projects/linktree-full-project.jpg',
     tag: "UI-UX  -  React  -  Styled Components",
     title: "LinkTree Personalizado",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Site com links personalizados e descrições com slides.",
     urlRepo: "https://github.com/Wallace-Bezerra/LinktreeFull",
     urlView: "https://linktree-full.vercel.app/",
   },
@@ -75,7 +77,7 @@ const projects: CardProject[] = [
     src: '/projects/bikcraft-project.jpg',
     tag: "UI-UX  -  Html - CSS  - JS ",
     title: "Landing Page Bikcraft",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Site sobre Bicicletas elétricas de alta precisão",
     urlRepo: "https://github.com/Wallace-Bezerra/Bikcraft",
     urlView: "https://wallace-bikcraft-site.netlify.app/",
   },
@@ -84,8 +86,8 @@ const projects: CardProject[] = [
     src: '/projects/lp-neon-project.jpg',
     tag: "UI-UX  -  Html  -  Sass - JS",
     title: "Landing Page Banco Neon",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
-    urlRepo: "",
+    description: "Landing Page de um banco digital, com animações e efeitos.",
+    urlRepo: "https://github.com/Wallace-Bezerra/landingPage-Neon",
     urlView: "https://wallace-lp-neon.netlify.app/",
   },
   {
@@ -93,7 +95,7 @@ const projects: CardProject[] = [
     src: '/projects/lp-blizzard-project.jpg',
     tag: "UI-UX  -  Html  -  Sass - JS",
     title: "Landing Page Blizzard",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Landing Page de uma das grandes desenvolvedoras da indústria de jogos.",
     urlRepo: "https://github.com/Wallace-Bezerra/blizzard",
     urlView: "https://wallace-bezerra.github.io/blizzard/",
   },
@@ -103,7 +105,7 @@ const projects: CardProject[] = [
     src: '/projects/nlw-project.jpg',
     tag: "UI-UX  -  Next JS - TypeScript  -  Tailwind",
     title: "Cápsula do Tempo",
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+    description: "Sua cápsula do tempo, colecione momentos marcantes da sua jornada e compartilhe se quiser com o mundo!",
     urlRepo: "https://github.com/Wallace-Bezerra/nlw-spaceTime-Web",
     urlView: "https://nlw-spacetimeweb.vercel.app/",
   },
@@ -112,11 +114,25 @@ const projects: CardProject[] = [
 export const Projects = () => {
   return (
     <S.ContainerProjects id="projetos">
-      <div className="title">
+      <motion.div className="title"
+        variants={fadeIn("up", 0.3)}
+        initial={"hidden"}
+        whileInView={'show'}
+        viewport={{ once: true }}
+      >
         <Image src="/projetos-ilustration.svg" width={720} height={160} alt="" />
-        <h3>Incríveis</h3>
-      </div>
-      <S.SwiperWrapper>
+        <motion.h3
+          variants={fadeIn("up", 0.4)}
+          initial={"hidden"}
+          whileInView={'show'}
+          viewport={{ once: true }}>Incríveis</motion.h3>
+      </motion.div>
+      <S.SwiperWrapper
+        variants={fadeIn("up", 0.5)}
+        initial={"hidden"}
+        whileInView={'show'}
+        viewport={{ once: true }}
+      >
         <S.ContainerSwiper>
           <Swiper
             slidesPerView={1}

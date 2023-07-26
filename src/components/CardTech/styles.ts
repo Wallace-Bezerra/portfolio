@@ -1,7 +1,8 @@
 'use client'
+import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
-export const ContainerCardTech = styled.div`
+export const ContainerCardTech = styled(motion.div)`
   border-radius: 22.5px;
   background: #171717;
   box-shadow: 0px 0.8333333730697632px 2.500000238418579px 0px rgba(62, 62, 62, 0.35);
@@ -31,11 +32,11 @@ interface ArrowProps {
 export const Arrow = styled.div<ArrowProps>`
   img{
     width: 100%;
-    opacity: ${({ inactive }) => inactive ? "0.5" : '1' };
+    opacity: ${({ inactive }) => inactive ? "0.5" : '1'};
     cursor: ${({ inactive }) => inactive ? 'not-allowed' : 'pointer'};
   }
 `
-  
+
 
 interface SliderWrapperProps {
   state: number
@@ -43,6 +44,6 @@ interface SliderWrapperProps {
 export const SliderWrapper = styled.div<SliderWrapperProps>`
   display: flex;
   width: calc(100% * 3);
-  transform: ${({state})=> `translateX(calc(${state}* -33.1%))` };
+  transform: ${({ state }) => `translateX(calc(${state}* -33.1%))`};
   transition: all .6s;
 `

@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import styled from "styled-components";
 export const ContainerProjects = styled.div`
 margin-top: 100px;
@@ -29,9 +30,9 @@ text-align: center;
     }
   }
 `
-export const SwiperWrapper = styled.div`
+export const SwiperWrapper = styled(motion.div)`
     margin-top: 40px;
-    transform: scale(1);
+    transform: scale(1) !important;
     margin-inline: 40px;
     @media (max-width: 600px){
       margin-inline: 20px;

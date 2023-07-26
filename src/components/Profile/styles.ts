@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import { keyframes, styled } from "styled-components";
 
 const spinner = keyframes`
@@ -70,7 +71,7 @@ export const ProfileContainer = styled.div`
     margin-top: 0px;
   }
 `
-export const Emphasis = styled.div`
+export const Emphasis = styled(motion.div)`
 position: relative;
 span{
   color: #3DD8BC;
@@ -149,7 +150,7 @@ p{
     }
   }
 `
-export const Contact = styled.div`
+export const Contact = styled(motion.div)`
   display: flex;
   gap: 30px;
   .group-button{
@@ -182,7 +183,7 @@ export const Contact = styled.div`
   }
   }
 `
-export const ProfileUser = styled.div`
+export const ProfileUser = styled(motion.div)`
   position: relative;
   margin-right: 60px;
   max-width:290px;

@@ -9,9 +9,10 @@ import { Footer } from '@/components/Footer'
 
 const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 const barlow = Barlow({ subsets: ['latin'], style: 'normal', weight: ["300", '400', '500', '600', '700'] })
+
 export const metadata: Metadata = {
-  title: 'Wallace Bezerra',
-  description: 'Portfólio Desenvolvedor Web',
+  title: 'Wallace Bezerra | Desenvolvedor Front-end',
+  description: 'Desenvolvedor Front-end com Experiência em React.js , Next.js , TypeScript,  Styled Components, Tailwind.',
 }
 
 export default function RootLayout({
