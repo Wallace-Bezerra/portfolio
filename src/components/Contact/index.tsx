@@ -37,7 +37,7 @@ export const Contact = () => {
         viewport={{ once: true }}
       >
         <Button id="linkedin" href="https://www.linkedin.com/in/wallace-bezerra/" target="_blank" variant="outlined"><Image src="./linkedin.svg" width="36" height="36" alt="icone" /></Button>
-        <Button id="instagram" href="https://www.instagram.com/wallace_x227/" target="_blank" variant="outlined"><Image src="./instagram-icone.svg" width="36" height="36" alt="icone" /> </Button>
+        <Button id="instagram" href="https://www.instagram.com/wallace.bz/" target="_blank" variant="outlined"><Image src="./instagram-icone.svg" width="36" height="36" alt="icone" /> </Button>
         <Button id="github" href="https://github.com/Wallace-Bezerra" target="_blank" variant="outlined"><Image src="./github-icone.svg" width="36" height="36" alt="icone" /></Button>
       </motion.div>
     </S.ContainerContact >
