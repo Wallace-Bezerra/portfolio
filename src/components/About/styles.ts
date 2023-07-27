@@ -1,7 +1,15 @@
 'use client'
 import { motion } from "framer-motion";
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
 
+const move = keyframes`
+  to{
+    transform: translateY(20px)
+  }
+  from{
+    transform: translateY(0px)
+  }
+`
 export const ContainerAbout = styled.div`
   display: flex;
   margin-top: 100px;
@@ -14,33 +22,141 @@ export const ContainerAbout = styled.div`
     font-weight: 400;
     margin-bottom: 40px;
   }  
-  img{
-    object-fit: cover;
-    border-radius: 30px;
-    width: 360px;
-    height:500px;
-  }
-
+.wrapper{
+    width: 454px;
+    height: 500px;
+}
   .about{
     display: flex;
+    position: relative;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    .bg-aboutImage{
+      width: 454px;
+      height: 387.143px;
+      border-radius: 22px;
+      border-start-end-radius: 200px;
+      background: rgba(47, 47, 47, 0.39);
+      position: absolute;
+      top: 73px;
+      .about-image{
+        position: absolute;
+        width: 240px;
+         height: 471px;
+        top: -73px;
+        right: 66px;
+      }
+      .vscode-bar{
+      position: absolute;
+      width: 44px;
+      height: 480px;
+      top: -43px;
+      left: 0px;
+    }
+    .vscode-icon{
+      position: absolute;
+      top: 20px;
+      left: 60px;
+      z-index: -1;
+      filter: saturate(50%) blur(4px);
+      transform: rotate(345deg);
+    }
+    .figma{
+      position: absolute;
+      bottom: -70px;
+      right: -9px;
+      width: 107px;
+      height: 161px;
+      filter: blur(2.5px);
+      transform: rotate(5deg);
+      animation: ${move} 3s ease-in-out infinite alternate;
+    }
+    .blur{
+      position: absolute;
+      left: 170px;
+      transition: all .5s;
+      width: 359px;
+      height: 389px;
+      border-radius: 640px;
+      background: rgba(125, 161, 182, 0.72);
+      z-index:2;
+      filter: blur(207.5px);
+    }
+    }
+   
   }
+
   @media (max-width:1150px){
     margin-inline: auto;
-    max-width: max-content;
+    max-width: 629px;
     margin-bottom: 120px;
+    flex-direction: column;
     .about{
-      display: initial;
-    }
-    img{
-      display: none;
+      gap: 60px;
     }
   }
   @media (max-width:700px){
     margin-top: 60px;
     margin-bottom: 80px;
+  }
+  @media (max-width:530px){
+    .wrapper{
+      width: 100%;
+      height: 360px;
+}
+    .about{
+      .bg-aboutImage{
+        width: 326px;
+        height: 262px;
+        border-radius: 22px;
+        border-start-end-radius: 144px;
+        background: rgba(47, 47, 47, 0.39);
+        position: absolute;
+        top: 71px;
+        .about-image{
+          position: absolute;
+          width: 163px;
+          height: 319px;
+          top: -44px;
+          right: 66px;
+        }
+        .vscode-bar{
+          position: absolute;
+          width: 29px;
+          height: 326px;
+          top: -43px;
+          left: 0px;
+      }
+      .vscode-icon{
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        z-index: -1;
+        filter: saturate(50%) blur(4px);
+        transform: rotate(345deg);
+        width: 87px;
+      }
+      .figma{
+        position: absolute;
+        bottom: -70px;
+        right: -9px;
+        width: 107px;
+        height: 161px;
+        filter: blur(2.5px);
+        transform: rotate(5deg);
+      }
+      .blur{
+        position: absolute;
+        left: 170px;
+        width: 359px;
+        height: 389px;
+        border-radius: 640px;
+        background: rgba(125, 161, 182, 0.72);
+        filter: blur(207.5px);
+      }
+    }
+  }
   }
 `
 export const AboutCard = styled(motion.div)`
@@ -50,6 +166,8 @@ export const AboutCard = styled(motion.div)`
   border-radius: 22.5px;
   background: #171717;
   display: flex;
+  position: relative;
+  z-index: -1;
   flex-direction: column;
   box-shadow: 0px 0.8333333730697632px 2.500000238418579px 0px rgba(62, 62, 62, 0.35);
   span{
@@ -93,7 +211,7 @@ export const AboutCard = styled(motion.div)`
     }
     p{
       font-size: 16px;
-      line-height: 190%;
+      line-height: 170%;
     }
   }
 `

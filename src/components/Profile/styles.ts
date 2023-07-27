@@ -60,6 +60,7 @@ const pointer = keyframes`
 export const ProfileContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 60px;
   margin-top: 90px;
   @media (max-width:1180px){
@@ -186,13 +187,13 @@ export const Contact = styled(motion.div)`
 export const ProfileUser = styled(motion.div)`
   position: relative;
   margin-right: 60px;
-  max-width:290px;
+  max-width: 294px;
   width:100%;
   .profile{
     border-radius: 20px;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 319px;
+    height: 406px;
   }
   .react-element{
     position: absolute;
@@ -203,6 +204,7 @@ export const ProfileUser = styled(motion.div)`
     justify-content: center;
     border-radius: 16px;
     background: rgba(130, 130, 132, 0.37);
+    filter: drop-shadow(0px 0px 52px rgba(255, 255, 255, 0.25));
     backdrop-filter: blur(6px);
     border: 1px solid #b2b4bb0f;;
     bottom: -5%;
@@ -217,6 +219,7 @@ export const ProfileUser = styled(motion.div)`
     width: 28.571%;
     height: 20.833%;
     display: flex;
+    filter: drop-shadow(0px 0px 52px rgba(255, 255, 255, 0.25));
     align-items: center;
     justify-content: center;
     border-radius: 16px;
@@ -234,6 +237,7 @@ export const ProfileUser = styled(motion.div)`
     position: absolute;
     left: -29%;
     top: 30%;
+    filter: drop-shadow(0px 0px 52px rgba(255, 255, 255, 0.25));
     width: 20.588%;
     height: 14.583%;
     img{
@@ -253,7 +257,20 @@ export const ProfileUser = styled(motion.div)`
     margin-right: 0px;
   }
   @media (max-width:480px){
-    max-width: 200px;
+    width: 237px;
+    height: 322px;
+    .profile{
+      /* max-width: 200px;
+      height: 300px; */
+      /* max-width: 256px;
+     height: 328px; */
+     /* width: 360px;
+    height: 459px */
+    position: absolute;
+    left: -22px;
+    width: 288px;
+    height: 382px;
+    }
 
   }
 `
@@ -281,5 +298,16 @@ export const Spinner = styled.div`
     position: absolute;
     width: 45%;
     height: 45%;
+  }
+`
+export const Image = styled.div`
+position: relative;
+  .blur{
+    position: absolute;
+    border-radius: 640px;
+    background: rgba(125, 161, 182, 0.49);
+    filter: blur(207.5px);
+    width: 400px;
+    height: 420px;
   }
 `

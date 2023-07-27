@@ -15,15 +15,28 @@ export const About = () => {
         viewport={{ once: true }}>Sobre mim</motion.h2 >
       <div className="about">
         <motion.div
+        className="wrapper"
           variants={fadeIn("up", 0.5)}
           initial={"hidden"}
           whileInView={'show'}
           viewport={{ once: true }}
         >
-          <Image src="/about-image.jpg" width={600} height={400} quality={100} priority alt="" />
+          <div className="bg-aboutImage">
+            <Image className="about-image" src="/about-image.png" width={600} height={400} quality={100} priority alt="" />
+            <Image className="vscode-bar" src="/vscode-bar.png" width={100} height={480} priority alt="" />
+            <Image className="vscode-icon" src="/vs-code-icon.svg" width={129} height={129} priority alt="" />
+            <Image className="figma" src="/tech/figma-tech-icone.svg" width={106} height={161} priority alt="" />
+            <motion.div 
+             variants={fadeIn("up", 0.5)}
+             initial={"hidden"}
+             whileInView={'show'}
+             viewport={{ once: true }}
+             className="blur"></motion.div>
+          </div>
         </motion.div>
+          
         <S.AboutCard
-          variants={fadeIn("up", 0.6)}
+          variants={fadeIn("up", 0.5)}
           initial={"hidden"}
           whileInView={'show'}
           viewport={{ once: true }}

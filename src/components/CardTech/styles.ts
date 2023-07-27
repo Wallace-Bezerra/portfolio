@@ -18,7 +18,7 @@ export const ContainerCardTech = styled(motion.div)`
     right: 30px;
     width: 21%;
   }
-  @media (max-width:660px){
+  @media (max-width:760px){
     width: 100%;
     .setas{
       min-width: 100px;

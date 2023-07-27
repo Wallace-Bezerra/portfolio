@@ -42,7 +42,10 @@ export const Profile = () => {
         whileInView={'show'}
         viewport={{ once: true }}
       >
-        <Image className="profile" src="/profile.png" width={600} height={400} priority alt="profile" />
+        <S.Image>
+          <div className="blur"></div>
+          <Image className="profile" src="/profile.png" width={600} height={400} priority alt="profile" />
+        </S.Image>
         <S.Spinner>
           <Image className="name-spinner" src='/name-Spinner.png' width={240} height={240} priority alt="Wallace Bezerra" />
           <Image className="logo-spinner" src='/logo.svg' width={75} height={26} alt="" priority />
