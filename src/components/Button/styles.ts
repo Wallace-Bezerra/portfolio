@@ -104,7 +104,7 @@ export const Button = styled.a<ButtonStyled>`
     padding: 11px 12px;
     font-size: 24px;
     height: 100%;
-    &#linkedin,&#instagram,&#github {
+    &#linkedin,&#linkedin-contact,&#instagram,&#github {
       width: 52px;
       height: 52px;
       img{
@@ -117,7 +117,7 @@ export const Button = styled.a<ButtonStyled>`
     padding: 10px 28px;
     height: 46px;
     border-radius: 6px;
-    &#linkedin,&#instagram,&#github{
+    &#linkedin,&#linkedin-contact,&#instagram,&#github{
       border-radius: 6px;
       width: 46px;
       height: 46px;
