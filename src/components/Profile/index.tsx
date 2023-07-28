@@ -44,10 +44,10 @@ export const Profile = () => {
       >
         <S.Image>
           <div className="blur"></div>
-          <Image className="profile" src="/profile.png" width={600} height={400} priority alt="profile" />
+          <Image className="profile" src="/profile.png" width={319} height={406} priority alt="profile" />
         </S.Image>
         <S.Spinner>
-          <Image className="name-spinner" src='/name-Spinner.png' width={240} height={240} priority alt="Wallace Bezerra" />
+          <Image className="name-spinner" src='/name-Spinner.png' width={256} height={256} priority alt="Wallace Bezerra" />
           <Image className="logo-spinner" src='/logo.svg' width={75} height={26} alt="" priority />
         </S.Spinner>
         <div className="react-element">
@@ -59,7 +59,7 @@ export const Profile = () => {
         <div className="tree-structure">
           <Image src='/tree-structure.svg' width={70} height={70} priority alt="" />
         </div>
-        <Image className="pointer" src='/pointer.png' width={76} priority height={84} alt="" />
+        <Image className="pointer" src='/pointer.png' width={81} priority height={90} alt="" />
       </S.ProfileUser>
     </S.ProfileContainer >
   )

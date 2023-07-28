@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const Item = styled.li`
+export const Item = styled.div`
     padding: 20px;
     border-radius: 11.667px;
     max-width: 90%;

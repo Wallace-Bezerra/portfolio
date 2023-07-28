@@ -1,7 +1,7 @@
 'use client'
 import styled from "styled-components";
 
-export const Slider = styled.ul`
+export const Slider = styled.div`
   padding: 46px 35px 75px 35px;
   width: 70%;
   height: 100%;

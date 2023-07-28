@@ -11,7 +11,7 @@ import { fadeIn } from "@/lib/variants";
 const projects: CardProject[] = [
   {
     id: "Wallace2",
-    src: '/projects/dsf-project.png',
+    src: '/projects/dsf-project.jpg',
     tag: "UI-UX  -  Next JS  -  Sass",
     title: "Landing Page Digital Bank",
     description: "Landing Page simples com algumas animações e efeitos.",
@@ -120,7 +120,7 @@ export const Projects = () => {
         whileInView={'show'}
         viewport={{ once: true }}
       >
-        <Image src="/projetos-ilustration.svg" width={720} height={160} alt="" />
+        <Image src="/projetos-ilustration.svg" width={720} height={160} priority alt="" />
         <motion.h3
           variants={fadeIn("up", 0.4)}
           initial={"hidden"}

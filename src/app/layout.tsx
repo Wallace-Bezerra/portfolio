@@ -24,8 +24,9 @@ export default function RootLayout({
     <html style={{ position: 'relative' }} lang="pt-br">
       <Head>
         <link
-          rel="stylesheet"
+          rel="preload"
           href="https://unpkg.com/swiper/css/swiper.min.css"
+          as='style'
         />
       </Head>
       <body className={`${rubik.className} ${barlow.className}`}>

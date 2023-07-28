@@ -2,7 +2,6 @@
 import * as S from "./styles"
 import Image from 'next/image'
 import { Link } from 'react-scroll';
-import { fadeIn } from '@/lib/variants';
 
 export const Header = () => {
   return (
@@ -14,6 +13,7 @@ export const Header = () => {
       <S.Navbar>
         <Link
           to='home'
+          href=""
           activeClass='active'
           smooth={true}
           spy={true}
@@ -21,6 +21,7 @@ export const Header = () => {
         >Home
         </Link>
         <Link
+          href=""
           to='projetos'
           activeClass='active'
           smooth={true}
@@ -29,6 +30,7 @@ export const Header = () => {
           Projetos
         </Link>
         <Link
+          href=""
           to='sobre'
           activeClass='active'
           smooth={true}

@@ -11,7 +11,7 @@ export const Button = styled.a<ButtonStyled>`
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  &#linkedin{
+  &#linkedin,&#linkedin-contact{
     padding: 16px;
     &:hover{
       transform: scale(1.04);

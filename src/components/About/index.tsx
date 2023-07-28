@@ -22,7 +22,7 @@ export const About = () => {
           viewport={{ once: true }}
         >
           <div className="bg-aboutImage">
-            <Image className="about-image" src="/about-image.png" width={600} height={400} quality={100} priority alt="" />
+            <Image className="about-image" src="/about-image.png" width={240} height={470} alt="" />
             <Image className="vscode-bar" src="/vscode-bar.png" width={100} height={480} priority alt="" />
             <Image className="vscode-icon" src="/vs-code-icon.svg" width={129} height={129} priority alt="" />
             <Image className="figma" src="/tech/figma-tech-icone.svg" width={106} height={161} priority alt="" />

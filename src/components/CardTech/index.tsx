@@ -67,7 +67,7 @@ const tech2: Tech[] = [
         nameImage: "Html / Css",
         src: "/tech/css-tech-icone.png",
         width: 165,
-        height: 195,
+        height: 189,
         alt: "Css icone"
       }
     ]

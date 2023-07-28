@@ -11,6 +11,7 @@ export const ContainerCard = styled.div`
     border-top-right-radius: 30px;
     display: block;
     max-height: 400px;
+    height: 800px;
     width: 100%;
     object-fit: cover;
     object-position: top;
