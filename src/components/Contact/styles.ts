@@ -1,5 +1,7 @@
 'use client'
-import { styled } from "styled-components";
+import  styled  from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 export const ContainerContact = styled.div`
   display: flex;
@@ -11,7 +13,7 @@ export const ContainerContact = styled.div`
   margin-bottom: 150px;
   h2{
     color: #7C8999;
-    font-family: Rubik;
+    font-family: ${rubik.style.fontFamily}, sans-serif;
     font-size: 40px;
     font-weight: 500;
     line-height: normal;
@@ -19,7 +21,7 @@ export const ContainerContact = styled.div`
   }
   p{
     color: #FFF;
-    font-family: Rubik;
+    font-family: ${rubik.style.fontFamily}, sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: normal;

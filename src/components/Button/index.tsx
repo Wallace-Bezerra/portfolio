@@ -8,7 +8,7 @@ interface ButtonProps extends ComponentProps<'a'> {
 export const Button = ({ children, variant, ...props }: ButtonProps) => {
   return (
     <S.Button {...props} 
-      variant={variant}
+      $variant={variant}
     >
       {children}
     </S.Button>

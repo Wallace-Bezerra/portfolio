@@ -1,8 +1,10 @@
 'use client'
 import { styled, css } from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 interface ButtonStyled {
-  variant: "primary" | "outlined" | "view" | "repo"
+  $variant: "primary" | "outlined" | "view" | "repo"
 }
 export const Button = styled.a<ButtonStyled>`
   display: inline-flex;
@@ -33,7 +35,7 @@ export const Button = styled.a<ButtonStyled>`
     }
   }
 
-  font-family: Rubik;
+  font-family: ${rubik.style.fontFamily}, sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -42,8 +44,8 @@ export const Button = styled.a<ButtonStyled>`
   &:hover{
     transform: scale(1.02);
   }
-  ${({ variant }) => {
-    return variant === "primary" && css`
+  ${({ $variant }) => {
+    return $variant === "primary" && css`
    background: linear-gradient(131deg, #3698C9 1.59%, #28CC87 100%);
    color: #FFF;
    &:hover{
@@ -51,8 +53,8 @@ export const Button = styled.a<ButtonStyled>`
     }
   `}}
 
-  ${({ variant }) => {
-    return variant === "outlined" && css`
+  ${({ $variant }) => {
+    return $variant === "outlined" && css`
    border-radius: 10px;
     border: 1px solid #FFF;
     color: #FFF;
@@ -62,8 +64,8 @@ export const Button = styled.a<ButtonStyled>`
     }
   `}}
 
-  ${({ variant }) => {
-    return variant === "view" && css`
+  ${({ $variant }) => {
+    return $variant === "view" && css`
     border-radius: 10px;
     border: 1px solid #FFF;
     background:  #FFF;
@@ -77,8 +79,8 @@ export const Button = styled.a<ButtonStyled>`
     }
   `}}
 
-  ${({ variant }) => {
-    return variant === "repo" && css`
+  ${({ $variant }) => {
+    return $variant === "repo" && css`
     border-radius: 10px;
     border: 1px solid #FFF;
     color: #FFF;

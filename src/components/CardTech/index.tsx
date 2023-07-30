@@ -154,13 +154,13 @@ export const CardTech = () => {
       initial={"hidden"}
       whileInView={'show'}
       viewport={{ once: true }}>
-      <S.SliderWrapper state={slideState}>
+      <S.SliderWrapper $state={slideState}>
         <Slide className='tech-images-1' tech={tech1} />
         <Slide className='tech-images-2' tech={tech2} />
         <Slide className='tech-images-3' tech={tech3} />
       </S.SliderWrapper>
       <div className='setas'>
-        <S.Arrow inactive={slideState === 0} onClick={() => {
+        <S.Arrow $inactive={slideState === 0} onClick={() => {
           if (slideState > 0) {
             setSlideState(prev => prev - 1)
           }
@@ -168,7 +168,7 @@ export const CardTech = () => {
         }}>
           <Image src="/back-icone.svg" width={62} height={62} alt="" />
         </S.Arrow>
-        <S.Arrow inactive={slideState === 2} onClick={() => {
+        <S.Arrow $inactive={slideState === 2} onClick={() => {
           if (slideState < slideLength - 1)
             setSlideState(prev => prev + 1)
         }}>

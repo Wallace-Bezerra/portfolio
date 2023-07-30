@@ -1,12 +1,14 @@
 'use client'
 import styled from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 export const Slider = styled.div`
   padding: 46px 35px 75px 35px;
   width: 70%;
   height: 100%;
   color: #FFF;
-  font-family: Rubik;
+  font-family: ${rubik.style.fontFamily}, sans-serif;
   /* font-size: max(1.8vw,1.2rem); */
   font-size: 32px;
   font-weight: 400;

@@ -1,6 +1,8 @@
 'use client'
 import { motion } from "framer-motion";
 import { keyframes, styled } from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 const move = keyframes`
   to{
@@ -12,12 +14,12 @@ const move = keyframes`
 `
 export const ContainerAbout = styled.div`
   display: flex;
-  margin-top: 100px;
+  margin-top: 160px;
   flex-direction: column;
   margin-bottom: 120px;
   h2{
     color: #FFF;
-    font-family: Rubik;
+    font-family: ${rubik.style.fontFamily}, sans-serif;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 40px;
@@ -175,7 +177,7 @@ export const AboutCard = styled(motion.div)`
     width: max-content;
     background: #2B2B2B;
     color: #FFF;
-    font-family: Rubik;
+    font-family: ${rubik.style.fontFamily}, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;

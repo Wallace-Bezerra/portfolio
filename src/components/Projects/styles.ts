@@ -1,6 +1,9 @@
 'use client'
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
+
 export const ContainerProjects = styled.div`
 margin-top: 100px;
 text-align: center;
@@ -14,13 +17,16 @@ text-align: center;
   }
   h3{
     color: #FFF;
-    font-family: Rubik;
+    font-family: ${rubik.style.fontFamily}, sans-serif;
     font-size: 48px;
     font-weight: 500;
     line-height: normal;
     position: absolute;
     top: 80px;
   }
+}
+.swiper{
+  height: 100%;
 }
  
   @media (max-width: 700px){
@@ -41,7 +47,7 @@ export const SwiperWrapper = styled(motion.div)`
 export const ContainerSwiper = styled.div`
   overflow: clip visible;
   width: 100%;
-  height:680px;
+  height: 730px;
   .swiper-button-prev{
       color: white;
       position: fixed;
@@ -80,7 +86,11 @@ export const ContainerSwiper = styled.div`
       align-items: center;
       transition: all .7s;
     }
+    @media (max-width: 970px){
+      height: 740px;
+    }
  @media (max-width: 800px){
+  height: 100%;
   .swiper-pagination{
     justify-content: center;
     top: initial;

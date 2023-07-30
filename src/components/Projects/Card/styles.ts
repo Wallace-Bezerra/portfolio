@@ -1,5 +1,7 @@
 'use client'
-import { styled } from "styled-components";
+import  styled  from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 export const ContainerCard = styled.div`
   display: flex;
@@ -24,11 +26,12 @@ export const ContainerCard = styled.div`
   .description{
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       gap: 20px;
-      height: 100%;
+      flex: 1;
+      /* height: 100%; */
       background: #252933;
       padding: 40px 40px;
-      justify-content: center;
       border-end-start-radius: 30px;
       border-end-end-radius: 30px;
     .content{
@@ -36,11 +39,10 @@ export const ContainerCard = styled.div`
       flex-direction: column;
       h4{
         color: #A5ACB5;
-        font-family: Rubik;
+        font-family: ${rubik.style.fontFamily}, sans-serif;
         align-self: flex-start;
         font-size: 18px;
         font-weight: 500;
-        line-height: 15.76px;
         margin-bottom: 12px;
       }
       
@@ -56,7 +58,7 @@ export const ContainerCard = styled.div`
         align-self: flex-start;
         text-align: start;
         color: #B0B0B0;
-        font-family: Rubik;
+        font-family: ${rubik.style.fontFamily}, sans-serif;
         font-size: 20px;
         font-weight: 400;
         line-height: 28px;
@@ -71,6 +73,9 @@ export const ContainerCard = styled.div`
       }
   }
   @media (max-width: 1080px){
+    img{
+      height: 400px;
+    }
     .buttons{
       a{
         font-size: 18px;

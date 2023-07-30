@@ -1,6 +1,7 @@
 'use client'
 import { motion } from "framer-motion";
-import { keyframes, styled } from "styled-components";
+import { keyframes}  from "styled-components";
+import  styled  from "styled-components";
 
 const spinner = keyframes`
 to{

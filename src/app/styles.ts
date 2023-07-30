@@ -1,16 +1,12 @@
 'use client'
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export const Main = styled.main`
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding-inline: 30px;
-  @media (max-width:600px){
-    overflow-x: hidden;
-  }
-`
-export const Blur = styled.div`
+  .blur{
     border-radius: 640px;
     background: rgb(26 40 48);
     filter: blur(294.5px);
@@ -22,4 +18,10 @@ export const Blur = styled.div`
     z-index: -1;
     left: -20%;
     top: 0px;
+  }
+  @media (max-width:600px){
+    overflow-x: hidden;
+  }
 `
+
+    

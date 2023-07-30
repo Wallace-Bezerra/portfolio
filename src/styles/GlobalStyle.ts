@@ -1,8 +1,8 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import { Rubik, Barlow } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
+const barlow = Barlow({ subsets: ['latin'], style: 'normal', weight: ["300", '400', '500', '600', '700'] })
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -11,12 +11,14 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
   cursor: url(./cursor.png), auto;
+  /* font-family: Rubik, sans-serif; */
 }
 
 html,
 body {
   overflow-x: hidden;
   min-height:100vh;
+  font-family: ${barlow.style.fontFamily},${rubik.style.fontFamily}, sans-serif;
   /* width */
 ::-webkit-scrollbar {
   width: 12px;

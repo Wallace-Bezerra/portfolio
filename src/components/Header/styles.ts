@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { styled } from "styled-components";
+import  styled  from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 export const ContainerHeader = styled(motion.header)`
   display: flex;
@@ -23,10 +25,10 @@ export const ContainerHeader = styled(motion.header)`
 export const Navbar = styled.nav`
   padding: 20px 80px;
   max-width: 300px;
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-content:center;
-  font-family: Rubik;
+  justify-content: center;
+  font-family: ${rubik.style.fontFamily}, sans-serif;
   gap: 30px;
   font-size: 18px;
   border-radius: 39px;

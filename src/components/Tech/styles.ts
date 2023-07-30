@@ -1,5 +1,7 @@
 'use client'
-import { styled } from "styled-components";
+import  styled  from "styled-components";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
 export const ContainerTech = styled.div`
     .tech{
@@ -12,7 +14,7 @@ export const ContainerTech = styled.div`
     display: flex;
     flex-direction: column;
     color: #FFF;
-    font-family: Rubik;
+    font-family: ${rubik.style.fontFamily}, sans-serif;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 40px;

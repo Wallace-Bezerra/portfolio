@@ -29,7 +29,8 @@ export default function RootLayout({
           as='style'
         />
       </Head>
-      <body className={`${rubik.className} ${barlow.className}`}>
+      <body>
+      {/* <body className={`${rubik.className} ${barlow.className}`}> */}
         <ClientComponent>
           <StyledComponentsRegistry>
             <GlobalStyle />

@@ -1,5 +1,8 @@
 'use client'
 import * as S from "./styles"
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, HashNavigation, Keyboard } from 'swiper/modules';
