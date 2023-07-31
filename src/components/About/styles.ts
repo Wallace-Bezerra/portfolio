@@ -99,7 +99,7 @@ export const ContainerAbout = styled.div`
     }
   }
   @media (max-width:700px){
-    margin-top: 60px;
+    margin-top: 115px;
     margin-bottom: 80px;
   }
   @media (max-width:530px){

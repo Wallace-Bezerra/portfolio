@@ -161,9 +161,9 @@ export const Projects = () => {
             modules={[Pagination, Keyboard, Navigation, HashNavigation]}
             className="mySwiper"
           >
-            {projects.map((project) => {
+            {projects.map((project,index) => {
               return (
-                <SwiperSlide key={project.id}>
+                <SwiperSlide data-hash={`slide${index}`} key={project.id}>
                   <Card project={project} />
                 </SwiperSlide>
               )

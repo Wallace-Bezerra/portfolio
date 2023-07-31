@@ -60,6 +60,7 @@ export const ContainerSwiper = styled.div`
     }
     .swiper-pagination{
       top: -58px;
+      position: fixed;
       left: initial;
       right: 0px;
       display: flex;
