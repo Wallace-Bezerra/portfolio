@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
-import  styled  from "styled-components";
-import { Rubik } from 'next/font/google'
-const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
+import styled from "styled-components";
+import { Rubik } from "next/font/google";
+const rubik = Rubik({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const ContainerHeader = styled(motion.header)`
   display: flex;
@@ -12,16 +15,16 @@ export const ContainerHeader = styled(motion.header)`
   padding-block: 25px;
   padding-inline: 30px;
   margin: 0 auto;
-  @media (max-width:600px){
-    img{
+  @media (max-width: 600px) {
+    img {
       width: 68.29px;
     }
   }
-  @media (max-width:420px){
+  @media (max-width: 420px) {
     justify-content: flex-end;
     padding-block: 12px;
   }
-`
+`;
 export const Navbar = styled.nav`
   padding: 20px 80px;
   max-width: 300px;
@@ -34,30 +37,29 @@ export const Navbar = styled.nav`
   border-radius: 39px;
   background: rgba(217, 217, 217, 0.08);
   backdrop-filter: blur(19.5px);
-  a{
-    transition: all .5s;
-    &.active{
-      transition: all .5s;
-      color: #3DD8BC;
+  a {
+    transition: all 0.5s;
+    &.active {
+      transition: all 0.5s;
+      color: #3dd8bc;
     }
-    &:not(&.active):hover{
-      color: #3DD8BC;
-      opacity: 0.6;
+    &:not(&.active):hover {
+      color: #3dd8bc;
+      opacity: 1;
     }
-    
   }
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     padding: 20px 30px;
     font-size: 14px;
   }
-  @media (max-width:420px){
+  @media (max-width: 420px) {
     position: fixed;
     max-width: initial;
-    font-size: 14px;
+    font-size: 24px;
     bottom: 0px;
     left: 0px;
     width: 100%;
     border-radius: 0px;
     z-index: 10;
   }
-  `
+`;
