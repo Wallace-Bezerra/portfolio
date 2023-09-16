@@ -1,4 +1,3 @@
-"use client";
 import * as S from "./styles";
 import dynamic from "next/dynamic";
 import Contact from "@/components/Contact";
