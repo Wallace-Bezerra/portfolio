@@ -4,7 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/lib/variants"
 
-export const Section = () => {
+export default function Section(){
   return (
     <S.SectionContainer>
       <motion.div

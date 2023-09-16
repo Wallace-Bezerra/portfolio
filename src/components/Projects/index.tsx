@@ -1,12 +1,17 @@
-'use client'
-import * as S from "./styles"
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, HashNavigation, Keyboard } from 'swiper/modules';
-import Image from "next/image"
+"use client";
+import * as S from "./styles";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Pagination,
+  Navigation,
+  HashNavigation,
+  Keyboard,
+} from "swiper/modules";
+import Image from "next/image";
 import { Card, CardProject } from "./Card";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
@@ -14,7 +19,7 @@ import { fadeIn } from "@/lib/variants";
 const projects: CardProject[] = [
   {
     id: "Wallace2",
-    src: '/projects/dsf-project.jpg',
+    src: "/projects/dsf-project.jpg",
     tag: "UI-UX  -  Next JS  -  Sass",
     title: "Landing Page Digital Bank",
     description: "Landing Page simples com algumas animações e efeitos.",
@@ -23,7 +28,7 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace4",
-    src: '/projects/travel-project.jpg',
+    src: "/projects/travel-project.jpg",
     tag: "UI-UX  -  Next JS - TypeScript  -  Tailwind",
     title: "Site Reserva de hospedagens",
     description: "Projeto Fullstack site de busca de viagens e hospedagens!",
@@ -32,7 +37,7 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace3",
-    src: '/projects/homeyou-project.jpg',
+    src: "/projects/homeyou-project.jpg",
     tag: "UI-UX  -  Sass - Javascript",
     title: "Landing Page HomeYou",
     description: "Landing Page moderna de uma imobiliaria.",
@@ -41,7 +46,7 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace1",
-    src: '/projects/eukatie-project.jpg',
+    src: "/projects/eukatie-project.jpg",
     tag: "UI-UX - React  -  Styled Components",
     title: "LinkTree Personalizado",
     description: "Site com links personalizados e descrições.",
@@ -50,25 +55,27 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace5",
-    src: '/projects/mini-blog-project.jpg',
+    src: "/projects/mini-blog-project.jpg",
     tag: "UI-UX  |  React |  Sass",
     title: "MiniBlog",
-    description: "Projeto feito para publicarmos posts, nele podemos criar uma conta e postar sobre qualquer assunto.",
+    description:
+      "Projeto feito para publicarmos posts, nele podemos criar uma conta e postar sobre qualquer assunto.",
     urlRepo: "https://github.com/Wallace-Bezerra/miniBlog",
     urlView: "https://mini-blog-gamma.vercel.app/",
   },
   {
     id: "Wallace6",
-    src: '/projects/git-api-projects.jpg',
+    src: "/projects/git-api-projects.jpg",
     tag: "UI-UX  -  React  - TypeScript -  Styled Components",
     title: "GitHub Api",
-    description: "Esse é o GitApi nele podemos acessar e exibir dados de usuários do GitHub usando a API do GitHub.",
+    description:
+      "Esse é o GitApi nele podemos acessar e exibir dados de usuários do GitHub usando a API do GitHub.",
     urlRepo: "https://github.com/Wallace-Bezerra/GitHub-Api",
     urlView: "https://git-hub-api-wallace.vercel.app/",
   },
   {
     id: "Wallace10",
-    src: '/projects/linktree-full-project.jpg',
+    src: "/projects/linktree-full-project.jpg",
     tag: "UI-UX  -  React  -  Styled Components",
     title: "LinkTree Personalizado",
     description: "Site com links personalizados e descrições com slides.",
@@ -77,7 +84,7 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace7",
-    src: '/projects/bikcraft-project.jpg',
+    src: "/projects/bikcraft-project.jpg",
     tag: "UI-UX  -  Html - CSS  - JS ",
     title: "Landing Page Bikcraft",
     description: "Site sobre Bicicletas elétricas de alta precisão",
@@ -86,7 +93,7 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace8",
-    src: '/projects/lp-neon-project.jpg',
+    src: "/projects/lp-neon-project.jpg",
     tag: "UI-UX  -  Html  -  Sass - JS",
     title: "Landing Page Banco Neon",
     description: "Landing Page de um banco digital, com animações e efeitos.",
@@ -95,45 +102,57 @@ const projects: CardProject[] = [
   },
   {
     id: "Wallace9",
-    src: '/projects/lp-blizzard-project.jpg',
+    src: "/projects/lp-blizzard-project.jpg",
     tag: "UI-UX  -  Html  -  Sass - JS",
     title: "Landing Page Blizzard",
-    description: "Landing Page de uma das grandes desenvolvedoras da indústria de jogos.",
+    description:
+      "Landing Page de uma das grandes desenvolvedoras da indústria de jogos.",
     urlRepo: "https://github.com/Wallace-Bezerra/blizzard",
     urlView: "https://wallace-bezerra.github.io/blizzard/",
   },
 
   {
     id: "Wallace11",
-    src: '/projects/nlw-project.jpg',
+    src: "/projects/nlw-project.jpg",
     tag: "UI-UX  -  Next JS - TypeScript  -  Tailwind",
     title: "Cápsula do Tempo",
-    description: "Sua cápsula do tempo, colecione momentos marcantes da sua jornada e compartilhe se quiser com o mundo!",
+    description:
+      "Sua cápsula do tempo, colecione momentos marcantes da sua jornada e compartilhe se quiser com o mundo!",
     urlRepo: "https://github.com/Wallace-Bezerra/nlw-spaceTime-Web",
     urlView: "https://nlw-spacetimeweb.vercel.app/",
   },
-]
+];
 
-export const Projects = () => {
+export default function Projects() {
   return (
     <S.ContainerProjects id="projetos">
-      <motion.div className="title"
+      <motion.div
+        className="title"
         variants={fadeIn("up", 0.3)}
         initial={"hidden"}
-        whileInView={'show'}
+        whileInView={"show"}
         viewport={{ once: true }}
       >
-        <Image src="/projetos-ilustration.svg" width={720} height={160} priority alt="" />
+        <Image
+          src="/projetos-ilustration.svg"
+          width={720}
+          height={160}
+          priority
+          alt=""
+        />
         <motion.h3
           variants={fadeIn("up", 0.4)}
           initial={"hidden"}
-          whileInView={'show'}
-          viewport={{ once: true }}>Incríveis</motion.h3>
+          whileInView={"show"}
+          viewport={{ once: true }}
+        >
+          Incríveis
+        </motion.h3>
       </motion.div>
       <S.SwiperWrapper
         variants={fadeIn("up", 0.5)}
         initial={"hidden"}
-        whileInView={'show'}
+        whileInView={"show"}
         viewport={{ once: true }}
       >
         <S.ContainerSwiper>
@@ -145,9 +164,8 @@ export const Projects = () => {
               900: {
                 slidesPerView: 2,
                 spaceBetween: 30,
-              }
-            }
-            }
+              },
+            }}
             keyboard={{
               enabled: true,
             }}
@@ -161,16 +179,16 @@ export const Projects = () => {
             modules={[Pagination, Keyboard, Navigation, HashNavigation]}
             className="mySwiper"
           >
-            {projects.map((project,index) => {
+            {projects.map((project, index) => {
               return (
                 <SwiperSlide data-hash={`slide${index}`} key={project.id}>
                   <Card project={project} />
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </S.ContainerSwiper>
       </S.SwiperWrapper>
-    </S.ContainerProjects >
-  )
+    </S.ContainerProjects>
+  );
 }

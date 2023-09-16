@@ -1,38 +1,41 @@
-'use client'
-import * as S from "./styles"
-import Image from 'next/image'
-import { Link } from 'react-scroll';
+"use client";
+import * as S from "./styles";
+import Image from "next/image";
+import { Link } from "react-scroll";
 
 export const Header = () => {
   return (
-    <S.ContainerHeader id="home"
+    <S.ContainerHeader
+      id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <Image src="./logo.svg" width="126" height="42" alt='logo' priority />
+      <Image src="./logo.svg" width="126" height="42" alt="logo" priority />
       <S.Navbar>
         <Link
-          to='home'
-          href=""
-          activeClass='active'
+          to="home"
+          href="home"
+          activeClass="active"
           smooth={true}
           spy={true}
           offset={0}
-        >Home
+        >
+          Home
         </Link>
         <Link
-          href=""
-          to='projetos'
-          activeClass='active'
+          href="projetos"
+          to="projetos"
+          activeClass="active"
           smooth={true}
           spy={true}
-          offset={0}>
+          offset={0}
+        >
           Projetos
         </Link>
         <Link
-          href=""
-          to='sobre'
-          activeClass='active'
+          href="sobre"
+          to="sobre"
+          activeClass="active"
           smooth={true}
           spy={true}
           offset={-60}
@@ -41,5 +44,5 @@ export const Header = () => {
         </Link>
       </S.Navbar>
     </S.ContainerHeader>
-  )
-}
+  );
+};
