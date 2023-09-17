@@ -30,6 +30,7 @@ export default function Profile() {
             src="/vscode-background.svg"
             width={400}
             height={400}
+            priority
             alt=""
           />
         </S.Emphasis>
