@@ -291,8 +291,8 @@ export const Spinner = styled.div`
   .name-spinner{
     position: absolute;
     flex: 1;
-    width: 89.189%;
-    height: 89.189%;
+    width: 94%;
+    height: 94%;
     animation: ${spinner} 14s linear infinite;
   }
   .logo-spinner{
