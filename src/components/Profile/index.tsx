@@ -19,11 +19,11 @@ export default function Profile() {
         >
           <span>Olá!</span>
           <motion.h1 variants={fadeIn("up", 0.2)}>
-            Front End Developer
+            FullStack Developer
           </motion.h1>
           <motion.p>
-            Criando Interfaces Intuitivas e Experiências Incríveis no
-            Desenvolvimento Web de Alto Nível
+            Construindo interfaces web envolventes e sistemas de alto nível para
+            experiências excepcionais
           </motion.p>
           <Image
             className="vscode-background"

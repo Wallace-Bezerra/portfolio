@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientComponent from "@/lib/ClientComponent";
 import StyledComponentsRegistry from "@/lib/registry";
 import { Header } from "@/components/Header";
@@ -19,13 +20,13 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Wallace Bezerra | Desenvolvedor Front-end",
+  title: "Wallace Bezerra | Desenvolvedor FullStack",
   description:
-    "Desenvolvedor Front-end com Experiência em React.js, Next.js, TypeScript, Styled Components, Tailwind. Oferecendo serviços de alta qualidade em desenvolvimento web. Transforme sua visão em realidade com um profissional que valoriza a usabilidade, performance e design responsivo.",
+    "Desenvolvedor FullStack com Experiência em React.js, Next.js, TypeScript, Styled Components, Tailwind. Oferecendo serviços de alta qualidade em desenvolvimento web. Transforme sua visão em realidade com um profissional que valoriza a usabilidade, performance e design responsivo.",
   keywords: [
     "Wallace Bezerra",
     "Wallace",
-    "Desenvolvedor Front-end",
+    "Desenvolvedor FullStack",
     "Full Stack",
     "Full-Stack",
     "Fullstack",
@@ -74,13 +75,13 @@ export default function RootLayout({
         />
       </Head>
       <body>
-        {/* <body className={`${rubik.className} ${barlow.className}`}> */}
         <ClientComponent>
           <StyledComponentsRegistry>
             <GlobalStyle />
             <Header />
             {children}
             <Analytics />
+            <SpeedInsights />
             <Footer />
           </StyledComponentsRegistry>
         </ClientComponent>

@@ -76,8 +76,8 @@ export default function About() {
           <div>
             <p>
               Olá, meu nome é Wallace tenho {year - 2002} anos e sou
-              Desenvolvedor Front-End com experiência em React.js, Next.js,
-              JavaScript, TypeScript, Styled Components entre outras
+              Desenvolvedor FullStack com experiência em React.js, Next.js,
+              JavaScript, Node, TypeScript, Styled Components entre outras
               tecnologias, Apaixonado pelo desenvolvimento de componentes
               reutilizáveis.
             </p>

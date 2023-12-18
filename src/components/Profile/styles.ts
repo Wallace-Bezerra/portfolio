@@ -1,7 +1,7 @@
 'use client'
 import { motion } from "framer-motion";
-import { keyframes}  from "styled-components";
-import  styled  from "styled-components";
+import { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const spinner = keyframes`
 to{
@@ -97,7 +97,7 @@ p{
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
-  max-width: 719px;
+  max-width: 560px;
   margin-bottom: 50px;
 }
 .vscode-background{
