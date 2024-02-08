@@ -154,8 +154,8 @@ export const ContainerAbout = styled.div`
         width: 359px;
         height: 389px;
         border-radius: 640px;
-        background: rgba(125, 161, 182, 0.72);
-        filter: blur(207.5px);
+        background: rgba(125, 161, 182, 0.3);
+        filter: blur(300px)
       }
     }
   }

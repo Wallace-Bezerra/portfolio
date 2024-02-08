@@ -27,6 +27,16 @@ const projects: CardProject[] = [
     urlView: "https://dsf-bank-three-js.vercel.app/",
   },
   {
+    id: "Wallace2",
+    src: "/projects/food-delivery-project.webp",
+    tag: "UI-UX  -  Next JS - TypeScript  -  Tailwind",
+    title: "Food Delivery",
+    description:
+      "Projeto FullStack para realizar pedidos de delivery, enviando pelo whatsApp. Onde possui um painel administrativo separado para gerenciar os produtos e etc.",
+    // urlRepo: "https://github.com/Wallace-Bezerra/food-delivery-store",
+    urlView: "https://food-delivery-store.vercel.app/",
+  },
+  {
     id: "Wallace4",
     src: "/projects/travel-project.jpg",
     tag: "UI-UX  -  Next JS - TypeScript  -  Tailwind",
