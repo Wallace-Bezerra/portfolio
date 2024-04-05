@@ -70,7 +70,7 @@ const projects: CardProject[] = [
     title: "Landing Page Banco Neon",
     description: "Landing Page de um banco digital, com animações e efeitos.",
     urlRepo: "https://github.com/Wallace-Bezerra/landingPage-Neon",
-    urlView: "https://wallace-lp-neon.netlify.app/",
+    urlView: "https://lp-neon-bank.vercel.app/",
   },
    {
     id: "Wallace9",
