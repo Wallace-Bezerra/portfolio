@@ -43,7 +43,7 @@ const projects: CardProject[] = [
     title: "Landing Page Bikcraft",
     description: "Site sobre Bicicletas elétricas de alta precisão",
     urlRepo: "https://github.com/Wallace-Bezerra/Bikcraft",
-    urlView: "https://wallace-bikcraft-site.netlify.app/",
+    urlView: "https://bikcraft-web.vercel.app",
   },
   // {
   //   id: "Wallace4",
