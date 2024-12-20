@@ -1,8 +1,8 @@
-import * as S from "./styles";
-import { Button } from "@/components/Button";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { fadeIn } from "@/lib/variants";
+import * as S from './styles';
+import { Button } from '@/components/Button';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/lib/variants';
 
 export interface CardProject {
   id: string;
@@ -12,6 +12,7 @@ export interface CardProject {
   description: string;
   urlView: string;
   urlRepo?: string;
+  isView?: boolean;
 }
 
 interface CardProps {
@@ -29,11 +30,16 @@ export const Card = ({ project }: CardProps) => {
         </div>
         <motion.div
           className="buttons"
-          variants={fadeIn("up", 0.2)}
-          initial={"hidden"}
-          animate={"show"}
+          variants={fadeIn('up', 0.2)}
+          initial={'hidden'}
+          animate={'show'}
         >
-          <Button href={project.urlView} target="_blank" variant="view">
+          <Button
+            isView={project.isView}
+            href={project.urlView}
+            target="_blank"
+            variant="view"
+          >
             Visualizar
           </Button>
           {project.urlRepo && (

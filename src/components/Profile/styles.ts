@@ -1,7 +1,7 @@
-'use client'
-import { motion } from "framer-motion";
-import { keyframes } from "styled-components";
-import styled from "styled-components";
+'use client';
+import { motion } from 'framer-motion';
+import { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const spinner = keyframes`
 to{
@@ -10,7 +10,7 @@ to{
 from{
   rotate: 360deg;
 }
-`
+`;
 const pointer = keyframes`
 0%{
   transform: translateX(7%)
@@ -57,146 +57,146 @@ const pointer = keyframes`
 100%{
   transform: translateX(7%)
 }
-`
+`;
 export const ProfileContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
   margin-top: 90px;
-  @media (max-width:1180px){
+  @media (max-width: 1180px) {
     margin-top: 50px;
     flex-direction: column;
     align-items: center;
   }
-  @media (max-width: 420px){
+  @media (max-width: 420px) {
     margin-top: 0px;
   }
-`
+`;
 export const Emphasis = styled(motion.div)`
-position: relative;
-span{
-  color: #3DD8BC;
-  font-family: Rubik;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 15px;
-}
-h1{
-  font-size: 52px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 22px;
-}
-p{
-  color: #A6AEB8;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
-  max-width: 560px;
-  margin-bottom: 50px;
-}
-.vscode-background{
-  position: absolute;
-  bottom: -90%;
-  right: -1%;
-  z-index: -1;
-}
-@media (max-width:1180px){
-  .vscode-background{
-    width: 55%;
-    bottom: -88%;
-    right: 8%;
+  position: relative;
+  span {
+    color: #3dd8bc;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+  p {
+    color: #a6aeb8;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    max-width: 570px;
+    margin-bottom: 50px;
+  }
+  .vscode-background {
+    position: absolute;
+    bottom: -90%;
+    right: -1%;
     z-index: -1;
   }
-}
-@media (max-width:600px){
-  .vscode-background{
-    width: 59%;
-    height: 154%;
-    left: 38%;
-    top: -15%;
+  @media (max-width: 1180px) {
+    .vscode-background {
+      width: 55%;
+      bottom: -88%;
+      right: 8%;
+      z-index: -1;
+    }
   }
-  span{
-    font-size: 18px;
-  }
-    h1{
+  @media (max-width: 600px) {
+    .vscode-background {
+      width: 59%;
+      height: 154%;
+      left: 38%;
+      top: -15%;
+    }
+    span {
+      font-size: 18px;
+    }
+    h1 {
       font-size: 42px;
       margin-bottom: 10px;
     }
-    p{
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 420px) {
+    .vscode-background {
+      top: 0%;
+    }
+    span {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+    p {
       font-size: 22px;
       line-height: 30px;
       margin-bottom: 30px;
     }
-}
-@media (max-width:420px){
-  .vscode-background{
-    top: 0%;
   }
-  span{
-    font-size: 18px;
-  }
-    h1{
-      font-size: 38px;
-      margin-bottom: 10px;
-    }
-    p{
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 30px;
-    }
-  }
-`
+`;
 export const Contact = styled(motion.div)`
   display: flex;
   gap: 30px;
-  .group-button{
+  .group-button {
     display: flex;
     gap: 30px;
   }
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     flex-direction: column;
     max-width: 480px;
-    .group-button{
-    display: flex;
-    gap: 30px;
-    gap: 13px;
-    a{
-      width: 100%;
-      height: 52px;
+    .group-button {
+      display: flex;
+      gap: 30px;
+      gap: 13px;
+      a {
+        width: 100%;
+        height: 52px;
+      }
     }
   }
-  }
-  @media (max-width:420px){
+  @media (max-width: 420px) {
     gap: 20px;
-    .group-button{
-    display: flex;
-    gap: 30px;
-    gap: 13px;
-    a{
-      width: 100%;
-      height: 46px;
+    .group-button {
+      display: flex;
+      gap: 30px;
+      gap: 13px;
+      a {
+        width: 100%;
+        height: 46px;
+      }
     }
   }
-  }
-`
+`;
 export const ProfileUser = styled(motion.div)`
   position: relative;
   margin-right: 60px;
   max-width: 294px;
-  width:100%;
-  .profile{
+  width: 100%;
+  .profile {
     border-radius: 20px;
     object-fit: cover;
     width: 319px;
     height: 406px;
   }
-  .react-element{
+  .react-element {
     position: absolute;
     width: 28.571%;
     height: 20.833%;
@@ -207,15 +207,15 @@ export const ProfileUser = styled(motion.div)`
     background: rgba(130, 130, 132, 0.37);
     filter: drop-shadow(0px 0px 52px rgba(255, 255, 255, 0.25));
     backdrop-filter: blur(6px);
-    border: 1px solid #b2b4bb0f;;
+    border: 1px solid #b2b4bb0f;
     bottom: -5%;
     left: -12%;
-    img{
-      width:50%;
+    img {
+      width: 50%;
       height: 50%;
     }
   }
-  .icone-computer{
+  .icone-computer {
     position: absolute;
     width: 28.571%;
     height: 20.833%;
@@ -229,57 +229,56 @@ export const ProfileUser = styled(motion.div)`
     border: 1px solid #b2b4bb0f;
     right: -12%;
     top: 46%;
-    img{
-      width:50%;
-      width:50%;
+    img {
+      width: 50%;
+      width: 50%;
     }
   }
-  .tree-structure{
+  .tree-structure {
     position: absolute;
     left: -29%;
     top: 30%;
     filter: drop-shadow(0px 0px 52px rgba(255, 255, 255, 0.25));
     width: 20.588%;
     height: 14.583%;
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
   }
-  .pointer{
-    position:absolute;
+  .pointer {
+    position: absolute;
     bottom: -12%;
     left: 1%;
     animation: ${pointer} 12s infinite;
     width: 25%;
     height: 19%;
   }
-  @media (max-width:600px){
+  @media (max-width: 600px) {
     margin-right: 0px;
   }
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     width: 237px;
     height: 322px;
-    .profile{
+    .profile {
       /* max-width: 200px;
       height: 300px; */
       /* max-width: 256px;
      height: 328px; */
-     /* width: 360px;
+      /* width: 360px;
     height: 459px */
-    position: absolute;
-    left: -22px;
-    width: 288px;
-    height: 382px;
+      position: absolute;
+      left: -22px;
+      width: 288px;
+      height: 382px;
     }
-
   }
-`
+`;
 export const Spinner = styled.div`
   position: relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 54.412%;
   height: 38.542%;
   border-radius: 50%;
@@ -288,22 +287,22 @@ export const Spinner = styled.div`
   position: absolute;
   bottom: -20%;
   right: -20%;
-  .name-spinner{
+  .name-spinner {
     position: absolute;
     flex: 1;
     width: 94%;
     height: 94%;
     animation: ${spinner} 14s linear infinite;
   }
-  .logo-spinner{
+  .logo-spinner {
     position: absolute;
     width: 45%;
     height: 45%;
   }
-`
+`;
 export const Image = styled.div`
-position: relative;
-  .blur{
+  position: relative;
+  .blur {
     position: absolute;
     border-radius: 640px;
     background: rgba(125, 161, 182, 0.49);
@@ -311,4 +310,4 @@ position: relative;
     width: 400px;
     height: 420px;
   }
-`
+`;

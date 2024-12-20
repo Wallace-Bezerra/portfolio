@@ -1,29 +1,28 @@
-"use client";
-import * as S from "./styles";
-import { Button } from "../Button";
-import Image from "next/image";
-import { fadeIn } from "@/lib/variants";
-import { motion } from "framer-motion";
+'use client';
+import * as S from './styles';
+import { Button } from '../Button';
+import Image from 'next/image';
+import { fadeIn } from '@/lib/variants';
+import { motion } from 'framer-motion';
 
 export default function Profile() {
   return (
     <S.ProfileContainer>
       <div>
         <S.Emphasis
-          variants={fadeIn("up", 0.2)}
-          initial={"hidden"}
-          animate={"show"}
+          variants={fadeIn('up', 0.2)}
+          initial={'hidden'}
+          animate={'show'}
           transition={{
             staggerChildren: 0.2,
           }}
         >
-          <span>Olá!</span>
-          <motion.h1 variants={fadeIn("up", 0.2)}>
-            FullStack Developer
-          </motion.h1>
+          <span>Olá, eu sou</span>
+          <motion.h1 variants={fadeIn('up', 0.2)}>Desenvolvedor Web</motion.h1>
           <motion.p>
-            Construindo interfaces web envolventes e sistemas de alto nível para
-            experiências excepcionais
+            Eu crio experiências digitais que combinam funcionalidade impecável
+            com um design que faz diferença conectando pessoas e ideias de forma
+            única.
           </motion.p>
           <Image
             className="vscode-background"
@@ -35,9 +34,9 @@ export default function Profile() {
           />
         </S.Emphasis>
         <S.Contact
-          variants={fadeIn("up", 0.3)}
-          initial={"hidden"}
-          animate={"show"}
+          variants={fadeIn('up', 0.3)}
+          initial={'hidden'}
+          animate={'show'}
         >
           <Button
             href="https://api.whatsapp.com/send?phone=5511965035851&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato."
@@ -72,9 +71,9 @@ export default function Profile() {
         </S.Contact>
       </div>
       <S.ProfileUser
-        variants={fadeIn("up", 0.3)}
-        initial={"hidden"}
-        whileInView={"show"}
+        variants={fadeIn('up', 0.3)}
+        initial={'hidden'}
+        whileInView={'show'}
         viewport={{ once: true }}
       >
         <S.Image>
