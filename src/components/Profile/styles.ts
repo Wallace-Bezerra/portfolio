@@ -142,12 +142,12 @@ export const Emphasis = styled(motion.div)`
       font-size: 18px;
     }
     h1 {
-      font-size: 38px;
+      font-size: 32px;
       margin-bottom: 10px;
     }
     p {
-      font-size: 22px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 23px;
       margin-bottom: 30px;
     }
   }

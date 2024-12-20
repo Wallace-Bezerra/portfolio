@@ -28,10 +28,20 @@ const projects: CardProject[] = [
     isView: true,
   },
   {
+    id: 'storyplus',
+    src: '/projects/storyplus.webp',
+    tag: 'UI/UX - NODE JS - NEXT.JS - TAILWIND CSS',
+    title: 'Sistema WebApp StoryPlus',
+    description:
+      'Sistema web responsivo com login, planos de pagamento, favoritos, nichos com subnichos, figurinhas recentes e ajustes de opacidade e cores.',
+    urlView: 'https://www.valquiriabrito.com',
+    isView: true,
+  },
+  {
     id: 'trinity',
     src: '/projects/trinity.webp',
     tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
-    title: 'Landing Page Trinity',
+    title: 'Landing Page Trinity AI',
     description:
       'Landing Page sobre automações com IA e chatbots, criada para promover as soluções inovadoras da Trinity AI com um design moderno e interativo.',
     urlView: 'https://trinityai.com.br/',
