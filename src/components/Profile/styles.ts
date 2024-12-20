@@ -146,7 +146,7 @@ export const Emphasis = styled(motion.div)`
       margin-bottom: 10px;
     }
     p {
-      font-size: 18px;
+      font-size: 17px;
       line-height: 23px;
       margin-bottom: 30px;
     }
