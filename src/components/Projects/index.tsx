@@ -88,16 +88,6 @@ const projects: CardProject[] = [
     urlView: 'https://wallace-bezerra.github.io/blizzard/',
   },
   {
-    id: 'Wallace1',
-    src: '/projects/eukatie-project.jpg',
-    tag: 'UI/UX - REACT - STYLED COMPONENTS',
-    title: 'LinkTree Personalizado',
-    description:
-      'Site para organização de links personalizados, com foco em acessibilidade e design único.',
-    urlRepo: 'https://github.com/Wallace-Bezerra/katieLinks',
-    urlView: 'https://eukatie.vercel.app/',
-  },
-  {
     id: 'Wallace5',
     src: '/projects/mini-blog-project.jpg',
     tag: 'UI/UX - REACT - SASS',
@@ -116,16 +106,6 @@ const projects: CardProject[] = [
       'Projeto que utiliza a API do GitHub para exibir informações detalhadas de usuários e repositórios.',
     urlRepo: 'https://github.com/Wallace-Bezerra/GitHub-Api',
     urlView: 'https://git-hub-api-wallace.vercel.app/',
-  },
-  {
-    id: 'Wallace11',
-    src: '/projects/nlw-project.jpg',
-    tag: 'UI/UX - NEXT.JS - TYPESCRIPT - TAILWIND CSS',
-    title: 'Cápsula do Tempo',
-    description:
-      'Plataforma para colecionar e compartilhar momentos marcantes da sua jornada, com um design emocional e envolvente.',
-    urlRepo: 'https://github.com/Wallace-Bezerra/nlw-spaceTime-Web',
-    urlView: 'https://nlw-spacetimeweb.vercel.app/',
   },
 ];
 
