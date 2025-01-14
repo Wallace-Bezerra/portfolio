@@ -1,9 +1,15 @@
-"use client";
-import * as S from "./styles";
-import Image from "next/image";
-import { Link } from "react-scroll";
+'use client';
+import * as S from './styles';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import { Link } from 'react-scroll';
 
 export const Header = () => {
+  const pathname = usePathname();
+
+  if (pathname === '/snapblend-politica-privacidade') {
+    return <></>;
+  }
   return (
     <S.ContainerHeader
       id="home"
