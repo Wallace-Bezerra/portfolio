@@ -1,17 +1,17 @@
-"use client";
-import { fadeIn } from "@/lib/variants";
-import * as S from "./styles";
-import { motion } from "framer-motion";
-import Image from "next/image";
+'use client';
+import { fadeIn } from '@/lib/variants';
+import * as S from './styles';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function About() {
   const year = new Date().getFullYear();
   return (
     <S.ContainerAbout id="sobre">
       <motion.h2
-        variants={fadeIn("up", 0.4)}
-        initial={"hidden"}
-        whileInView={"show"}
+        variants={fadeIn('up', 0.4)}
+        initial={'hidden'}
+        whileInView={'show'}
         viewport={{ once: true }}
       >
         Sobre mim
@@ -19,9 +19,9 @@ export default function About() {
       <div className="about">
         <motion.div
           className="wrapper"
-          variants={fadeIn("up", 0.5)}
-          initial={"hidden"}
-          whileInView={"show"}
+          variants={fadeIn('up', 0.5)}
+          initial={'hidden'}
+          whileInView={'show'}
           viewport={{ once: true }}
         >
           <div className="bg-aboutImage">
@@ -57,9 +57,9 @@ export default function About() {
               alt=""
             />
             <motion.div
-              variants={fadeIn("up", 0.5)}
-              initial={"hidden"}
-              whileInView={"show"}
+              variants={fadeIn('up', 0.5)}
+              initial={'hidden'}
+              whileInView={'show'}
               viewport={{ once: true }}
               className="blur"
             ></motion.div>
@@ -67,9 +67,9 @@ export default function About() {
         </motion.div>
 
         <S.AboutCard
-          variants={fadeIn("up", 0.5)}
-          initial={"hidden"}
-          whileInView={"show"}
+          variants={fadeIn('up', 0.5)}
+          initial={'hidden'}
+          whileInView={'show'}
           viewport={{ once: true }}
         >
           <span> São Paulo - SP</span>

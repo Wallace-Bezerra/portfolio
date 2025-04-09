@@ -21,7 +21,14 @@ interface CardProps {
 export const Card = ({ project }: CardProps) => {
   return (
     <S.ContainerCard>
-      <Image src={project.src} width={390} height={200} priority alt="" />
+      <Image
+        quality={100}
+        src={project.src}
+        width={390}
+        height={200}
+        priority
+        alt={project.title}
+      />
       <div className="description">
         <div className="content">
           <h4>{project.tag}</h4>

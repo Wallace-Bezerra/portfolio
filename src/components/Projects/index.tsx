@@ -18,6 +18,16 @@ import { fadeIn } from '@/lib/variants';
 
 const projects: CardProject[] = [
   {
+    id: 'snapblend',
+    src: '/projects/snapblend.webp',
+    tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
+    title: 'Landing Page Aplicativo Snapblend',
+    description:
+      'Landing page responsiva feita com Next.js e Tailwind CSS para o app SnapBlend, com suporte a tradução para varios idiomas e foco em edição criativa de fotos e filtros.',
+    urlView: 'https://www.snapblend.app/',
+    isView: true,
+  },
+  {
     id: 'trut',
     src: '/projects/trut.webp',
     tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
