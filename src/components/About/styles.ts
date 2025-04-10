@@ -47,10 +47,10 @@ export const ContainerAbout = styled.div`
       top: 73px;
       .about-image {
         position: absolute;
-        width: 240px;
-        height: 471px;
+        width: 346px;
+        height: 478px;
         top: -73px;
-        right: 66px;
+        right: 15px;
       }
       .vscode-bar {
         position: absolute;
@@ -64,7 +64,6 @@ export const ContainerAbout = styled.div`
         top: 20px;
         left: 60px;
         z-index: -1;
-        filter: saturate(50%) blur(4px);
         transform: rotate(345deg);
       }
       .figma {
@@ -73,7 +72,6 @@ export const ContainerAbout = styled.div`
         right: -9px;
         width: 107px;
         height: 161px;
-        filter: blur(2.5px);
         transform: rotate(5deg);
         animation: ${move} 3s ease-in-out infinite alternate;
       }
@@ -120,10 +118,10 @@ export const ContainerAbout = styled.div`
         top: 71px;
         .about-image {
           position: absolute;
-          width: 163px;
-          height: 319px;
+          width: 246px;
+          height: 322px;
           top: -44px;
-          right: 66px;
+          right: 0px;
         }
         .vscode-bar {
           position: absolute;
@@ -135,19 +133,18 @@ export const ContainerAbout = styled.div`
         .vscode-icon {
           position: absolute;
           top: 20px;
-          left: 60px;
+          left: 50px;
           z-index: -1;
-          filter: saturate(50%) blur(4px);
+          /* filter: saturate(50%); */
           transform: rotate(345deg);
           width: 87px;
         }
         .figma {
           position: absolute;
           bottom: -70px;
-          right: -9px;
+          right: 0px;
           width: 107px;
           height: 161px;
-          filter: blur(2.5px);
           transform: rotate(5deg);
         }
         .blur {
@@ -197,7 +194,7 @@ export const AboutCard = styled(motion.div)`
     line-height: 165%;
     letter-spacing: 0.115px;
     & + p {
-      margin-top: 32px;
+      margin-top: 20px;
     }
   }
   @media (max-width: 900px) {

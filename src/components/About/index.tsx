@@ -75,11 +75,11 @@ export default function About() {
           <span> São Paulo - SP</span>
           <div>
             <p>
-              Olá, meu nome é Wallace tenho {year - 2002} anos e sou
-              Desenvolvedor FullStack com experiência em React.js, Next.js,
-              JavaScript, Node, TypeScript, Styled Components entre outras
-              tecnologias, Apaixonado pelo desenvolvimento de componentes
-              reutilizáveis.
+              Olá, meu nome é Wallace, tenho {year - 2002} anos e sou
+              Desenvolvedor FullStack com foco em aplicações mobile e web. Tenho
+              experiência com React.js, React Native, Next.js, JavaScript, Node,
+              TypeScript, Tailwind e outras tecnologias. Sou apaixonado por
+              criar componentes reutilizáveis e soluções bem estruturadas.
             </p>
             <p>
               Estou pronto para enfrentar novos desafios e contribuir com
