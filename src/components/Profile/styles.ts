@@ -187,14 +187,14 @@ export const Contact = styled(motion.div)`
 `;
 export const ProfileUser = styled(motion.div)`
   position: relative;
-  margin-right: 60px;
-  max-width: 294px;
+  margin-right: 40px;
+  max-width: 320px;
   width: 100%;
   .profile {
     border-radius: 20px;
     object-fit: cover;
-    width: 319px;
-    height: 406px;
+    width: 295px;
+    height: 450px;
   }
   .react-element {
     position: absolute;
@@ -268,9 +268,9 @@ export const ProfileUser = styled(motion.div)`
       /* width: 360px;
     height: 459px */
       position: absolute;
-      left: -22px;
-      width: 288px;
-      height: 382px;
+      left: -14px;
+      width: 269px;
+      height: 416px;
     }
   }
 `;

@@ -80,9 +80,9 @@ export default function Profile() {
           <div className="blur"></div>
           <Image
             className="profile"
-            src="/profile.png"
-            width={319}
-            height={406}
+            src="/profile.webp"
+            width={419}
+            height={745}
             priority
             alt="profile"
           />
