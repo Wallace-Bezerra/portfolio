@@ -63,9 +63,9 @@ export const ProfileContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  margin-top: 90px;
+  margin-top: 40px;
   @media (max-width: 1180px) {
-    margin-top: 50px;
+    margin-top: 30px;
     flex-direction: column;
     align-items: center;
   }
@@ -85,6 +85,7 @@ export const Emphasis = styled(motion.div)`
     margin-bottom: 15px;
   }
   h1 {
+    max-width: 395px;
     font-size: 52px;
     font-style: normal;
     font-weight: 600;
@@ -97,7 +98,7 @@ export const Emphasis = styled(motion.div)`
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    max-width: 570px;
+    max-width: 610px;
     margin-bottom: 50px;
   }
   .vscode-background {
@@ -142,6 +143,7 @@ export const Emphasis = styled(motion.div)`
       font-size: 18px;
     }
     h1 {
+      max-width: 305px;
       font-size: 32px;
       margin-bottom: 10px;
     }
@@ -305,7 +307,7 @@ export const Image = styled.div`
   .blur {
     position: absolute;
     border-radius: 640px;
-    background: rgba(125, 161, 182, 0.49);
+    background: rgb(139 233 255 / 29%);
     filter: blur(207.5px);
     width: 400px;
     height: 420px;

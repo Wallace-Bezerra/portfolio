@@ -18,11 +18,13 @@ export default function Profile() {
           }}
         >
           <span>Olá, eu sou</span>
-          <motion.h1 variants={fadeIn('up', 0.2)}>Desenvolvedor Web</motion.h1>
+          <motion.h1 variants={fadeIn('up', 0.2)}>
+            Desenvolvedor de Apps e Sites
+          </motion.h1>
           <motion.p>
-            Eu crio experiências digitais que combinam funcionalidade impecável
-            com um design que faz diferença conectando pessoas e ideias de forma
-            única.
+            Eu crio apps e sites que as pessoas curtem usar. Gosto de juntar
+            design com funcionalidade, sem enrolação. A ideia é sempre
+            transformar algo simples em algo legal de verdade.
           </motion.p>
           <Image
             className="vscode-background"

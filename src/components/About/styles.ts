@@ -84,7 +84,7 @@ export const ContainerAbout = styled.div`
         width: 359px;
         height: 389px;
         border-radius: 640px;
-        background: rgba(125, 161, 182, 0.72);
+        background: rgb(139 233 255 / 29%);
         z-index: 2;
         filter: blur(207.5px);
       }
