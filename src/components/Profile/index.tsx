@@ -56,7 +56,7 @@ export default function Profile() {
               GitHub
             </Button> */}
             <Button
-              href="https://chat.whatsapp.com/Ec76GiKLYiL5YqGg6Uqgh1?mode=wwt"
+              href="https://chat.whatsapp.com/Ec76GiKLYiL5YqGg6Uqgh1"
               target="_blank"
               variant="outlined"
             >
