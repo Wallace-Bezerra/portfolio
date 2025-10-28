@@ -48,19 +48,12 @@ export default function Profile() {
             Contate-me
           </Button>
           <div className="group-button">
-            {/* <Button
+            <Button
               href="https://github.com/Wallace-Bezerra"
               target="_blank"
               variant="outlined"
             >
               GitHub
-            </Button> */}
-            <Button
-              href="https://tocnuncamais.vercel.app/"
-              target="_blank"
-              variant="outlined"
-            >
-              TESTE
             </Button>
             <Button
               id="linkedin"
