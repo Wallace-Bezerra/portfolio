@@ -48,12 +48,19 @@ export default function Profile() {
             Contate-me
           </Button>
           <div className="group-button">
-            <Button
+            {/* <Button
               href="https://github.com/Wallace-Bezerra"
               target="_blank"
               variant="outlined"
             >
               GitHub
+            </Button> */}
+            <Button
+              href="https://chat.whatsapp.com/Ec76GiKLYiL5YqGg6Uqgh1?mode=wwt"
+              target="_blank"
+              variant="outlined"
+            >
+              TESTE
             </Button>
             <Button
               id="linkedin"
