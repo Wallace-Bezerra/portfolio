@@ -8,6 +8,7 @@ import { Rubik, Barlow } from "next/font/google";
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Footer } from "@/components/Footer";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -74,6 +75,8 @@ export default function RootLayout({
           as="style"
         />
       </Head>
+      <GoogleTagManager gtmId="G-PSWY0JZ5S5" />
+      <GoogleAnalytics gaId="G-PSWY0JZ5S5" />
       <body>
         <ClientComponent>
           <StyledComponentsRegistry>
