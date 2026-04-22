@@ -88,16 +88,6 @@ const projects: CardProject[] = [
     urlView: 'https://wallace-bezerra.github.io/HomeYou/',
   },
   {
-    id: 'Wallace8',
-    src: '/projects/lp-neon-project.jpg',
-    tag: 'UI/UX - HTML - SASS - JS',
-    title: 'Landing Page Banco Neon',
-    description:
-      'Landing Page para um banco digital, com animações criativas e design profissional que destaca a inovação da marca.',
-    urlRepo: 'https://github.com/Wallace-Bezerra/landingPage-Neon',
-    urlView: 'https://lp-neon-bank.vercel.app/',
-  },
-  {
     id: 'Wallace9',
     src: '/projects/lp-blizzard-project.jpg',
     tag: 'UI/UX - HTML - SASS - JS',
