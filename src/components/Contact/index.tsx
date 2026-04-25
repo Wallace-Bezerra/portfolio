@@ -64,7 +64,7 @@ export default function Contact() {
         </Button>
         <Button
           id="instagram"
-          href="https://www.instagram.com/wallace.bz/"
+          href="https://www.instagram.com/wallacebz.dev/"
           target="_blank"
           variant="outlined"
         >
