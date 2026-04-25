@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { fadeIn } from '@/lib/variants';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { Fragment } from 'react';
 
 export default function Profile() {
   const t = useTranslations('profile');
@@ -25,7 +26,9 @@ export default function Profile() {
         >
           <span>{t('eyebrow')}</span>
           <motion.h1 variants={fadeIn('up', 0.2)}>
-            {t('title')}
+            {t('title').split('\n').map((line, i, arr) => (
+              <Fragment key={i}>{line}{i < arr.length - 1 && <br />}</Fragment>
+            ))}
           </motion.h1>
           <motion.p>{t('description')}</motion.p>
           <Image

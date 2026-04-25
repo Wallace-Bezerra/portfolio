@@ -85,11 +85,11 @@ export const Emphasis = styled(motion.div)`
     margin-bottom: 15px;
   }
   h1 {
-    max-width: 395px;
-    font-size: 52px;
+    max-width: 540px;
+    font-size: clamp(36px, 4.2vw, 52px);
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 1.15;
     margin-bottom: 22px;
   }
   p {
@@ -126,7 +126,8 @@ export const Emphasis = styled(motion.div)`
       font-size: 18px;
     }
     h1 {
-      font-size: 42px;
+      max-width: 100%;
+      font-size: clamp(32px, 7vw, 42px);
       margin-bottom: 10px;
     }
     p {
@@ -143,8 +144,8 @@ export const Emphasis = styled(motion.div)`
       font-size: 18px;
     }
     h1 {
-      max-width: 305px;
-      font-size: 32px;
+      max-width: 100%;
+      font-size: clamp(26px, 8.5vw, 34px);
       margin-bottom: 10px;
     }
     p {
