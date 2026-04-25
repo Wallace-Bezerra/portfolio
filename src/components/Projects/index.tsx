@@ -25,6 +25,13 @@ const baseProjects: Omit<CardProject, 'title' | 'description'>[] = [
     isView: true,
   },
   {
+    id: 'needhub',
+    src: '/projects/needhub.webp',
+    tag: 'UI/UX - NODE.JS - NEXT.JS - TAILWIND CSS',
+    urlView: 'https://needhub.app/',
+    isView: true,
+  },
+  {
     id: 'snapblend',
     src: '/projects/snapblend.webp',
     tag: 'UI/UX - NEXT.JS - TAILWIND CSS',

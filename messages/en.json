@@ -74,6 +74,10 @@
         "title": "SnapBlend App Landing Page",
         "description": "Responsive landing page built with Next.js and Tailwind CSS for the SnapBlend app, with multilingual support and a focus on creative photo editing and filters."
       },
+      "needhub": {
+        "title": "NeedHub — Video & Audio Downloader",
+        "description": "Web app to download videos and audio (MP4 or MP3) directly in the browser, no sign-up needed. Paste the link and download in seconds."
+      },
       "strino": {
         "title": "Strino App Landing Page",
         "description": "Landing page for Strino: tuner, chords, theory, metronome and AI song tools. Built with Next.js and Tailwind."

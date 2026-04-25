@@ -70,6 +70,10 @@
       "repo": "Repository"
     },
     "items": {
+      "needhub": {
+        "title": "NeedHub — Video- en Audio-downloader",
+        "description": "Web-app om video's en audio (MP4 of MP3) direct in de browser te downloaden, zonder registratie. Plak de link en download in seconden."
+      },
       "strino": {
         "title": "Strino App Landing Page",
         "description": "Landing voor Strino: stemmer, akkoorden, theorie, metronoom en AI-tools voor muzikanten. Next.js en Tailwind."

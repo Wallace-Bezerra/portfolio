@@ -39,14 +39,14 @@ const tech1: Tech[] = [
     ]
   },
   {
-    name: "Styled Components",
+    name: "Tailwind CSS",
     images: [
       {
-        nameImage: "Styled Components",
-        src: "/tech/styled-componets-tech-icone.png",
-        width: 256,
-        height: 256,
-        alt: "Styled Components icone"
+        nameImage: "Tailwind CSS",
+        src: "/tech/tailwind-tech-icone.png",
+        width: 280,
+        height: 250,
+        alt: "Tailwind CSS icone"
       },
     ]
   },
@@ -107,14 +107,14 @@ const tech2: Tech[] = [
 
 const tech3: Tech[] = [
   {
-    name: "Tailwind css",
+    name: "Node.js",
     images: [
       {
-        nameImage: "Tailwind css",
-        src: "/tech/tailwind-tech-icone.png",
-        width: 280,
-        height: 250,
-        alt: "Tailwind css icone"
+        nameImage: "Node.js",
+        src: "/tech/nodejs-tech-icone.svg",
+        width: 260,
+        height: 260,
+        alt: "Node.js icone"
       }
     ]
   },

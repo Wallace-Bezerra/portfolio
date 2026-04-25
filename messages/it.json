@@ -70,6 +70,10 @@
       "repo": "Repository"
     },
     "items": {
+      "needhub": {
+        "title": "NeedHub — Downloader Video e Audio",
+        "description": "App web per scaricare video e audio (MP4 o MP3) direttamente nel browser, senza registrazione. Incolla il link e scarica in pochi secondi."
+      },
       "strino": {
         "title": "Landing Page dell'App Strino",
         "description": "Landing per Strino: accordatore, accordi, teoria, metronomo e IA per musicisti. Next.js e Tailwind."

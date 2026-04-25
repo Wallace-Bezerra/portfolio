@@ -70,6 +70,10 @@
       "repo": "仓库"
     },
     "items": {
+      "needhub": {
+        "title": "NeedHub — 视频与音频下载器",
+        "description": "无需注册，直接在浏览器中下载视频和音频（MP4 或 MP3）的 Web 应用。粘贴链接，数秒内完成下载。"
+      },
       "strino": {
         "title": "Strino 应用落地页",
         "description": "Strino 音乐 App 落地页：调音器、和弦、乐理、节拍器和 AI 工具。Next.js 与 Tailwind。"

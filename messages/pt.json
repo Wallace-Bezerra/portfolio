@@ -78,6 +78,10 @@
         "title": "Landing Page do App Strino",
         "description": "Landing para o app Strino: ferramentas para músicos (afinador, acordes, teoria, metrônomo e IA). Next.js e Tailwind."
       },
+      "needhub": {
+        "title": "NeedHub — Downloader de Vídeo e Áudio",
+        "description": "App web para baixar vídeos e áudios (MP4 ou MP3) direto no navegador, sem cadastro. Cole o link e baixe em segundos."
+      },
       "trut": {
         "title": "Landing Page Trut Ambientes Planejados",
         "description": "Landing page desenvolvida em Next.js, com design refinado e efeitos visuais que destacam a elegância dos serviços de ambientes planejados da Trut."

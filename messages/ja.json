@@ -70,6 +70,10 @@
       "repo": "リポジトリ"
     },
     "items": {
+      "needhub": {
+        "title": "NeedHub — 動画・音声ダウンローダー",
+        "description": "登録不要でブラウザで直接動画・音声（MP4またはMP3）をダウンロードできるWebアプリ。リンクを貼るだけで数秒でダウンロード完了。"
+      },
       "strino": {
         "title": "Strinoアプリ ランディングページ",
         "description": "Strino向けランディング：チューナー、コード、理論、メトロノーム、AIツール。Next.jsとTailwind。"
