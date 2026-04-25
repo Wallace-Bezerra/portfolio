@@ -15,15 +15,13 @@ import Image from 'next/image';
 import { Card, CardProject } from './Card';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/variants';
+import { useTranslations } from 'next-intl';
 
-const projects: CardProject[] = [
+const baseProjects: Omit<CardProject, 'title' | 'description'>[] = [
   {
     id: 'snapblend',
     src: '/projects/snapblend.webp',
     tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
-    title: 'Landing Page Aplicativo Snapblend',
-    description:
-      'Landing page responsiva feita com Next.js e Tailwind CSS para o app SnapBlend, com suporte a tradução para varios idiomas, foco em edição criativa de fotos e filtros.',
     urlView: 'https://www.snapblend.app/',
     isView: true,
   },
@@ -31,9 +29,6 @@ const projects: CardProject[] = [
     id: 'trut',
     src: '/projects/trut.webp',
     tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
-    title: 'Landing Page Trut Ambientes Planejados',
-    description:
-      'Landing Page desenvolvida em Next.js, com design refinado e efeitos visuais que destacam a qualidade e elegância dos serviços de ambientes planejados da Trut.',
     urlView: 'https://www.trut.com.br/',
     isView: true,
   },
@@ -41,9 +36,6 @@ const projects: CardProject[] = [
     id: 'storyplus',
     src: '/projects/storyplus.webp',
     tag: 'UI/UX - NODE JS - NEXT.JS - TAILWIND CSS',
-    title: 'Sistema WebApp StoryPlus',
-    description:
-      'Sistema web responsivo com login, planos de pagamento, favoritos, nichos com subnichos, figurinhas recentes e ajustes de opacidade e cores.',
     urlView: 'https://www.valquiriabrito.com',
     isView: true,
   },
@@ -51,85 +43,72 @@ const projects: CardProject[] = [
     id: 'trinity',
     src: '/projects/trinity.webp',
     tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
-    title: 'Landing Page Trinity AI',
-    description:
-      'Landing Page sobre automações com IA e chatbots, criada para promover as soluções inovadoras da Trinity AI com um design moderno e interativo.',
     urlView: 'https://trinityai.com.br/',
     isView: true,
   },
   {
-    id: 'Wallace2',
+    id: 'digitalBank',
     src: '/projects/dsf-project.jpg',
     tag: 'UI/UX - NEXT.JS - SASS',
-    title: 'Landing Page Digital Bank',
-    description:
-      'Landing Page para um banco digital, com animações fluidas e elementos interativos que proporcionam uma experiência imersiva.',
     urlRepo: 'https://github.com/Wallace-Bezerra/dsf-bank-ThreeJs',
     urlView: 'https://dsf-bank-three-js.vercel.app/',
   },
   {
-    id: 'Wallace7',
+    id: 'bikcraft',
     src: '/projects/bikcraft-project.jpg',
     tag: 'UI/UX - HTML - CSS - JS',
-    title: 'Landing Page Bikcraft',
-    description:
-      'Landing Page sobre bicicletas elétricas de alta performance, com um design limpo e responsivo.',
     urlRepo: 'https://github.com/Wallace-Bezerra/Bikcraft',
     urlView: 'https://bikcraft-web.vercel.app',
   },
   {
-    id: 'Wallace3',
+    id: 'homeyou',
     src: '/projects/homeyou-project.jpg',
     tag: 'UI/UX - SASS - JAVASCRIPT',
-    title: 'Landing Page HomeYou',
-    description:
-      'Landing Page elegante para uma imobiliária, com foco em apresentar propriedades de maneira moderna e envolvente.',
     urlRepo: 'https://github.com/Wallace-Bezerra/HomeYou',
     urlView: 'https://wallace-bezerra.github.io/HomeYou/',
   },
   {
-    id: 'Wallace8',
+    id: 'neon',
     src: '/projects/lp-neon-project.jpg',
     tag: 'UI/UX - HTML - SASS - JS',
-    title: 'Landing Page Banco Neon',
-    description:
-      'Landing Page para um banco digital, com animações criativas e design profissional que destaca a inovação da marca.',
     urlRepo: 'https://github.com/Wallace-Bezerra/landingPage-Neon',
     urlView: 'https://lp-neon-bank.vercel.app/',
   },
   {
-    id: 'Wallace9',
+    id: 'blizzard',
     src: '/projects/lp-blizzard-project.jpg',
     tag: 'UI/UX - HTML - SASS - JS',
-    title: 'Landing Page Blizzard',
-    description:
-      'Landing Page para uma das maiores desenvolvedoras de jogos do mundo, com design imersivo e animações envolventes.',
     urlRepo: 'https://github.com/Wallace-Bezerra/blizzard',
     urlView: 'https://wallace-bezerra.github.io/blizzard/',
   },
   {
-    id: 'Wallace5',
+    id: 'miniblog',
     src: '/projects/mini-blog-project.jpg',
     tag: 'UI/UX - REACT - SASS',
-    title: 'MiniBlog',
-    description:
-      'Aplicação para criação e publicação de posts, permitindo interação e compartilhamento de conteúdos diversos.',
     urlRepo: 'https://github.com/Wallace-Bezerra/miniBlog',
     urlView: 'https://mini-blog-gamma.vercel.app/',
   },
   {
-    id: 'Wallace6',
+    id: 'githubApi',
     src: '/projects/git-api-projects.jpg',
     tag: 'UI/UX - REACT - TYPESCRIPT - STYLED COMPONENTS',
-    title: 'GitHub API',
-    description:
-      'Projeto que utiliza a API do GitHub para exibir informações detalhadas de usuários e repositórios.',
     urlRepo: 'https://github.com/Wallace-Bezerra/GitHub-Api',
     urlView: 'https://git-hub-api-wallace.vercel.app/',
   },
 ];
 
 export default function Projects() {
+  const t = useTranslations('projects');
+  const projects: CardProject[] = baseProjects.map((project) => ({
+    ...project,
+    title: t(`items.${project.id}.title`),
+    description: t(`items.${project.id}.description`),
+  }));
+  const labels = {
+    view: t('actions.view'),
+    repo: t('actions.repo'),
+  };
+
   return (
     <S.ContainerProjects id="projetos">
       <motion.div
@@ -152,7 +131,7 @@ export default function Projects() {
           whileInView={'show'}
           viewport={{ once: true }}
         >
-          Incríveis
+          {t('title')}
         </motion.h3>
       </motion.div>
       <S.SwiperWrapper
@@ -188,7 +167,7 @@ export default function Projects() {
             {projects.map((project, index) => {
               return (
                 <SwiperSlide data-hash={`slide${index}`} key={project.id}>
-                  <Card project={project} />
+                  <Card project={project} labels={labels} />
                 </SwiperSlide>
               );
             })}

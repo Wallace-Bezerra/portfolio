@@ -4,8 +4,14 @@ import { Button } from '../Button';
 import Image from 'next/image';
 import { fadeIn } from '@/lib/variants';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function Profile() {
+  const t = useTranslations('profile');
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=5511965035851&text=${encodeURIComponent(
+    t('whatsappMessage')
+  )}`;
+
   return (
     <S.ProfileContainer>
       <div>
@@ -17,15 +23,11 @@ export default function Profile() {
             staggerChildren: 0.2,
           }}
         >
-          <span>Olá, eu sou</span>
+          <span>{t('eyebrow')}</span>
           <motion.h1 variants={fadeIn('up', 0.2)}>
-            Desenvolvedor de Apps e Sites
+            {t('title')}
           </motion.h1>
-          <motion.p>
-            Eu crio apps e sites que as pessoas curtem usar. Gosto de juntar
-            design com funcionalidade, sem enrolação. A ideia é sempre
-            transformar algo simples em algo legal de verdade.
-          </motion.p>
+          <motion.p>{t('description')}</motion.p>
           <Image
             className="vscode-background"
             src="/vscode-background.svg"
@@ -41,11 +43,11 @@ export default function Profile() {
           animate={'show'}
         >
           <Button
-            href="https://api.whatsapp.com/send?phone=5511965035851&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato."
+            href={whatsappUrl}
             target="_blank"
             variant="primary"
           >
-            Contate-me
+            {t('contact')}
           </Button>
           <div className="group-button">
             <Button
@@ -66,7 +68,7 @@ export default function Profile() {
                 width="36"
                 height="36"
                 priority
-                alt="icone"
+                alt={t('linkedinAlt')}
               />
             </Button>
           </div>
@@ -86,7 +88,7 @@ export default function Profile() {
             width={419}
             height={745}
             priority
-            alt="profile"
+            alt={t('profileAlt')}
           />
         </S.Image>
         <S.Spinner>

@@ -1,24 +1,17 @@
 'use client';
 import { motion } from 'framer-motion';
-import { keyframes, styled } from 'styled-components';
+import { styled } from 'styled-components';
 import { Rubik } from 'next/font/google';
 const rubik = Rubik({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
 });
 
-const move = keyframes`
-  to{
-    transform: translateY(20px)
-  }
-  from{
-    transform: translateY(0px)
-  }
-`;
 export const ContainerAbout = styled.div`
   display: flex;
   margin-top: 160px;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 120px;
   h2 {
     color: #fff;
@@ -26,150 +19,39 @@ export const ContainerAbout = styled.div`
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 40px;
-  }
-  .wrapper {
-    width: 454px;
-    height: 500px;
+    text-align: center;
+    width: 100%;
   }
   .about {
     display: flex;
-    position: relative;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    .bg-aboutImage {
-      width: 454px;
-      height: 387.143px;
-      border-radius: 22px;
-      border-start-end-radius: 200px;
-      background: rgba(47, 47, 47, 0.39);
-      position: absolute;
-      top: 73px;
-      .about-image {
-        position: absolute;
-        width: 346px;
-        height: 478px;
-        top: -73px;
-        right: 15px;
-      }
-      .vscode-bar {
-        position: absolute;
-        width: 44px;
-        height: 480px;
-        top: -43px;
-        left: 0px;
-      }
-      .vscode-icon {
-        position: absolute;
-        top: 20px;
-        left: 60px;
-        z-index: -1;
-        transform: rotate(345deg);
-      }
-      .figma {
-        position: absolute;
-        bottom: -70px;
-        right: -9px;
-        width: 107px;
-        height: 161px;
-        transform: rotate(5deg);
-        animation: ${move} 3s ease-in-out infinite alternate;
-      }
-      .blur {
-        position: absolute;
-        left: 170px;
-        transition: all 0.5s;
-        width: 359px;
-        height: 389px;
-        border-radius: 640px;
-        background: rgb(139 233 255 / 29%);
-        z-index: 2;
-        filter: blur(207.5px);
-      }
-    }
+    justify-content: center;
+    width: 100%;
+    max-width: 692px;
   }
 
   @media (max-width: 1150px) {
     margin-inline: auto;
     max-width: 629px;
     margin-bottom: 120px;
-    flex-direction: column;
-    .about {
-      gap: 60px;
-    }
   }
   @media (max-width: 700px) {
     margin-top: 115px;
     margin-bottom: 80px;
   }
-  @media (max-width: 530px) {
-    .wrapper {
-      width: 100%;
-      height: 360px;
-    }
-    .about {
-      .bg-aboutImage {
-        width: 326px;
-        height: 262px;
-        border-radius: 22px;
-        border-start-end-radius: 144px;
-        background: rgba(47, 47, 47, 0.39);
-        position: absolute;
-        top: 71px;
-        .about-image {
-          position: absolute;
-          width: 246px;
-          height: 322px;
-          top: -44px;
-          right: 0px;
-        }
-        .vscode-bar {
-          position: absolute;
-          width: 29px;
-          height: 326px;
-          top: -43px;
-          left: 0px;
-        }
-        .vscode-icon {
-          position: absolute;
-          top: 20px;
-          left: 50px;
-          z-index: -1;
-          /* filter: saturate(50%); */
-          transform: rotate(345deg);
-          width: 87px;
-        }
-        .figma {
-          position: absolute;
-          bottom: -70px;
-          right: 0px;
-          width: 107px;
-          height: 161px;
-          transform: rotate(5deg);
-        }
-        .blur {
-          position: absolute;
-          left: 170px;
-          width: 359px;
-          height: 389px;
-          border-radius: 640px;
-          background: rgba(125, 161, 182, 0.3);
-          filter: blur(300px);
-        }
-      }
-    }
-  }
 `;
 export const AboutCard = styled(motion.div)`
   max-width: 692px;
-  min-height: 509px;
+  width: 100%;
+  min-height: max-content;
   padding: 42px;
   border-radius: 22.5px;
   background: #171717;
   display: flex;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   box-shadow: 0px 0.8333333730697632px 2.500000238418579px 0px
     rgba(62, 62, 62, 0.35);
   span {
@@ -185,6 +67,11 @@ export const AboutCard = styled(motion.div)`
     line-height: 140%;
     text-transform: uppercase;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  > div {
+    width: 100%;
   }
   p {
     color: #fff;
@@ -198,7 +85,6 @@ export const AboutCard = styled(motion.div)`
     }
   }
   @media (max-width: 900px) {
-    min-height: max-content;
     p {
       font-size: 18px;
     }

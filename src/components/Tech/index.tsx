@@ -3,8 +3,11 @@ import * as S from "./styles";
 import { CardTech } from "../CardTech";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
+import { useTranslations } from "next-intl";
 
 export default function Tech() {
+  const t = useTranslations("tech");
+
   return (
     <S.ContainerTech>
       <motion.h2
@@ -14,7 +17,7 @@ export default function Tech() {
         whileInView={"show"}
         viewport={{ once: true }}
       >
-        Tecnologias
+        {t("title")}
       </motion.h2>
       <motion.div
         className="tech"
@@ -29,7 +32,7 @@ export default function Tech() {
             whileInView={"show"}
             viewport={{ once: true }}
           >
-            <span>Minhas</span> Habilidades
+            <span>{t("skillsTitlePrefix")}</span> {t("skillsTitle")}
           </motion.h2>
           <motion.p
             className="side"
@@ -38,8 +41,7 @@ export default function Tech() {
             whileInView={"show"}
             viewport={{ once: true }}
           >
-            Ao lado estão as tecnologias e frameworks que possuo habilidades e
-            conhecimentos.
+            {t("sideDescription")}
           </motion.p>
           <motion.p
             className="below"
@@ -48,8 +50,7 @@ export default function Tech() {
             whileInView={"show"}
             viewport={{ once: true }}
           >
-            Logo abaixo estão as tecnologias e frameworks que possuo habilidades
-            e conhecimentos.
+            {t("belowDescription")}
           </motion.p>
         </S.Skills>
       </motion.div>

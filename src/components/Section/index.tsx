@@ -3,8 +3,11 @@ import * as S from "./styles"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/lib/variants"
+import { useTranslations } from "next-intl"
 
 export default function Section(){
+  const t = useTranslations("section")
+
   return (
     <S.SectionContainer>
       <motion.div
@@ -23,8 +26,8 @@ export default function Section(){
           whileInView={'show'}
           viewport={{ once: true }}
         >
-          Desenvolvimento
-          <span>Tecnologia</span>
+          {t("titleTop")}
+          <span>{t("titleBottom")}</span>
         </motion.h2>
         <div className="topics">
           <motion.div className="textTopic"
@@ -32,16 +35,16 @@ export default function Section(){
             initial={"hidden"}
             whileInView={'show'}
             viewport={{ once: true }}>
-            <h3>IMPULSIONO SEU OBJETIVO</h3>
-            <p>Meu objetivo é desenvolver interfaces atraentes e intuitivas que melhorem a usabilidade e satisfação dos usuários.</p>
+            <h3>{t("goalTitle")}</h3>
+            <p>{t("goalDescription")}</p>
           </motion.div>
           <motion.div className="textTopic"
             variants={fadeIn("up", 0.5)}
             initial={"hidden"}
             whileInView={'show'}
             viewport={{ once: true }}>
-            <h3>SOLUÇOES CRIATIVAS | DESIGN RESPONSIVO</h3>
-            <p>Ao garantir que seu site seja responsivo, você está preparado para enfrentar os desafios do mundo digital e oferecer o melhor para seus visitantes.</p>
+            <h3>{t("solutionsTitle")}</h3>
+            <p>{t("solutionsDescription")}</p>
           </motion.div>
         </div>
       </S.TopicsContainer>
@@ -61,7 +64,7 @@ export default function Section(){
             <Image className="bug-2" src="/bug2-icone.svg" width={40} height={40} priority alt="" />
           </div>
         </div>
-        <p>Estou constantemente atualizado com as últimas tendências e tecnologias, buscando aprimorar minha expertise para oferecer resultados excepcionais.</p>
+        <p>{t("vscodeDescription")}</p>
       </S.VsCode>
     </S.SectionContainer >
   )

@@ -4,8 +4,15 @@ import Image from "next/image";
 import { Button } from "../Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("contact");
+  const profile = useTranslations("profile");
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=5511965035851&text=${encodeURIComponent(
+    profile("whatsappMessage")
+  )}`;
+
   return (
     <S.ContainerContact>
       <div>
@@ -15,7 +22,7 @@ export default function Contact() {
           whileInView={"show"}
           viewport={{ once: true }}
         >
-          Vamos trabalhar juntos para deixar
+          {t("title")}
         </motion.h2>
         <motion.p
           variants={fadeIn("up", 0.5)}
@@ -23,7 +30,7 @@ export default function Contact() {
           whileInView={"show"}
           viewport={{ once: true }}
         >
-          Sua presença online incrível!
+          {t("subtitle")}
         </motion.p>
       </div>
       <motion.div
@@ -33,11 +40,11 @@ export default function Contact() {
         viewport={{ once: true }}
       >
         <Button
-          href="https://api.whatsapp.com/send?phone=5511965035851&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato."
+          href={whatsappUrl}
           target="_blank"
           variant="view"
         >
-          Contate-me
+          {t("button")}
         </Button>
       </motion.div>
       <motion.div
@@ -53,7 +60,7 @@ export default function Contact() {
           target="_blank"
           variant="outlined"
         >
-          <Image src="./linkedin.svg" width="36" height="36" alt="icone" />
+          <Image src="/linkedin.svg" width="36" height="36" alt={t("linkedinAlt")} />
         </Button>
         <Button
           id="instagram"
@@ -65,7 +72,7 @@ export default function Contact() {
             src="./instagram-icone.svg"
             width="36"
             height="36"
-            alt="icone"
+            alt={t("instagramAlt")}
           />{" "}
         </Button>
         <Button
@@ -74,7 +81,7 @@ export default function Contact() {
           target="_blank"
           variant="outlined"
         >
-          <Image src="./github-icone.svg" width="36" height="36" alt="icone" />
+          <Image src="/github-icone.svg" width="36" height="36" alt={t("githubAlt")} />
         </Button>
       </motion.div>
     </S.ContainerContact>

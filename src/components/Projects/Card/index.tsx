@@ -17,8 +17,12 @@ export interface CardProject {
 
 interface CardProps {
   project: CardProject;
+  labels: {
+    view: string;
+    repo: string;
+  };
 }
-export const Card = ({ project }: CardProps) => {
+export const Card = ({ project, labels }: CardProps) => {
   return (
     <S.ContainerCard>
       <Image
@@ -47,11 +51,11 @@ export const Card = ({ project }: CardProps) => {
             target="_blank"
             variant="view"
           >
-            Visualizar
+            {labels.view}
           </Button>
           {project.urlRepo && (
             <Button href={project.urlRepo} target="_blank" variant="repo">
-              Repositorio
+              {labels.repo}
             </Button>
           )}
         </motion.div>

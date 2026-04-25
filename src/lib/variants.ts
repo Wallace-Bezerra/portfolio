@@ -1,6 +1,8 @@
+import type { Variants } from 'framer-motion';
+
 type direction = 'up' | 'left' | 'down' | 'right' | 'none'
 
-export const fadeIn = (direction: direction, delay: number) => {
+export const fadeIn = (direction: direction, delay: number): Variants => {
   return {
     hidden: {
       y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,

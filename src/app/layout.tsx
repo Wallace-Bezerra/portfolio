@@ -2,28 +2,14 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientComponent from "@/lib/ClientComponent";
 import StyledComponentsRegistry from "@/lib/registry";
-import { Header } from "@/components/Header";
 import { GlobalStyle } from "@/styles/GlobalStyle";
-import { Rubik, Barlow } from "next/font/google";
 import type { Metadata } from "next";
-import Head from "next/head";
-import { Footer } from "@/components/Footer";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-
-const rubik = Rubik({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-const barlow = Barlow({
-  subsets: ["latin"],
-  style: "normal",
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Wallace Bezerra | Desenvolvedor FullStack",
   description:
-    "Desenvolvedor FullStack com Experiência em React.js, Next.js, TypeScript, Styled Components, Tailwind. Oferecendo serviços de alta qualidade em desenvolvimento web. Transforme sua visão em realidade com um profissional que valoriza a usabilidade, performance e design responsivo.",
+    "Desenvolvedor FullStack especializado em apps, sites e interfaces modernas com React, React Native, Next.js e TypeScript.",
   keywords: [
     "Wallace Bezerra",
     "Wallace",
@@ -59,6 +45,7 @@ export const metadata: Metadata = {
     "Front-end Expert",
   ],
   creator: "Wallace Bezerra",
+  metadataBase: new URL("https://www.wallacebezerra.com"),
 };
 
 export default function RootLayout({
@@ -67,25 +54,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html style={{ position: "relative" }} lang="pt-br">
-      <Head>
+    <html style={{ position: "relative" }} lang="pt-BR">
+      <head>
         <link
           rel="preload"
           href="https://unpkg.com/swiper/css/swiper.min.css"
           as="style"
         />
-      </Head>
+      </head>
       <GoogleTagManager gtmId="G-PSWY0JZ5S5" />
       <GoogleAnalytics gaId="G-PSWY0JZ5S5" />
       <body>
         <ClientComponent>
           <StyledComponentsRegistry>
             <GlobalStyle />
-            <Header />
             {children}
             <Analytics />
             <SpeedInsights />
-            <Footer />
           </StyledComponentsRegistry>
         </ClientComponent>
       </body>

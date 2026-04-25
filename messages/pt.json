@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Wallace Bezerra | Desenvolvedor FullStack",
+      "description": "Desenvolvedor FullStack especializado em apps, sites e interfaces modernas com React, React Native, Next.js e TypeScript.",
+      "keywords": [
+        "Wallace Bezerra",
+        "Desenvolvedor FullStack",
+        "Desenvolvedor React",
+        "Desenvolvedor React Native",
+        "Desenvolvedor Next.js",
+        "Desenvolvimento Web",
+        "Desenvolvimento Mobile",
+        "UI/UX",
+        "TypeScript",
+        "Sao Paulo"
+      ]
+    }
+  },
+  "common": {
+    "loading": "Carregando..."
+  },
+  "navigation": {
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "languageSwitcher": "Selecionar idioma",
+    "languages": {
+      "pt": "Português",
+      "en": "Inglês",
+      "es": "Espanhol",
+      "fr": "Francês",
+      "de": "Alemão"
+    }
+  },
+  "profile": {
+    "eyebrow": "Olá, eu sou",
+    "title": "Desenvolvedor de Apps e Sites",
+    "description": "Crio apps e sites que as pessoas gostam de usar. Uno design, performance e código bem estruturado para transformar ideias em experiências digitais claras e funcionais.",
+    "contact": "Contate-me",
+    "whatsappMessage": "Olá, gostaria de entrar em contato.",
+    "linkedinAlt": "Perfil de Wallace Bezerra no LinkedIn",
+    "profileAlt": "Wallace Bezerra, desenvolvedor fullstack"
+  },
+  "section": {
+    "titleTop": "Desenvolvimento",
+    "titleBottom": "Tecnologia",
+    "goalTitle": "IMPULSIONO SEU OBJETIVO",
+    "goalDescription": "Desenvolvo interfaces atraentes, intuitivas e pensadas para melhorar a usabilidade de cada produto.",
+    "solutionsTitle": "SOLUÇÕES CRIATIVAS | DESIGN RESPONSIVO",
+    "solutionsDescription": "Seu site precisa funcionar bem em qualquer tela. Por isso, construo experiências responsivas, rápidas e preparadas para o mundo digital.",
+    "vscodeDescription": "Estou sempre acompanhando novas tecnologias e boas práticas para entregar projetos mais completos, modernos e eficientes."
+  },
+  "tech": {
+    "title": "Tecnologias",
+    "skillsTitlePrefix": "Minhas",
+    "skillsTitle": "Habilidades",
+    "sideDescription": "Ao lado estão as tecnologias e frameworks que uso para criar produtos digitais modernos.",
+    "belowDescription": "Abaixo estão as tecnologias e frameworks que uso para criar produtos digitais modernos."
+  },
+  "projects": {
+    "title": "Incríveis",
+    "actions": {
+      "view": "Visualizar",
+      "repo": "Repositório"
+    },
+    "items": {
+      "snapblend": {
+        "title": "Landing Page do Aplicativo SnapBlend",
+        "description": "Landing page responsiva feita com Next.js e Tailwind CSS para o app SnapBlend, com suporte a vários idiomas e foco em edição criativa de fotos e filtros."
+      },
+      "trut": {
+        "title": "Landing Page Trut Ambientes Planejados",
+        "description": "Landing page desenvolvida em Next.js, com design refinado e efeitos visuais que destacam a elegância dos serviços de ambientes planejados da Trut."
+      },
+      "storyplus": {
+        "title": "Sistema WebApp StoryPlus",
+        "description": "Sistema web responsivo com login, planos de pagamento, favoritos, nichos com subnichos, figurinhas recentes e ajustes de opacidade e cores."
+      },
+      "trinity": {
+        "title": "Landing Page Trinity AI",
+        "description": "Landing page sobre automações com IA e chatbots, criada para apresentar as soluções da Trinity AI com um design moderno e interativo."
+      },
+      "digitalBank": {
+        "title": "Landing Page Digital Bank",
+        "description": "Landing page para um banco digital, com animações fluidas e elementos interativos que criam uma experiência imersiva."
+      },
+      "bikcraft": {
+        "title": "Landing Page Bikcraft",
+        "description": "Landing page sobre bicicletas elétricas de alta performance, com design limpo, responsivo e foco na apresentação do produto."
+      },
+      "homeyou": {
+        "title": "Landing Page HomeYou",
+        "description": "Landing page elegante para uma imobiliária, criada para apresentar propriedades de maneira moderna e envolvente."
+      },
+      "neon": {
+        "title": "Landing Page Banco Neon",
+        "description": "Landing page para um banco digital, com animações criativas e design profissional para destacar a inovação da marca."
+      },
+      "blizzard": {
+        "title": "Landing Page Blizzard",
+        "description": "Landing page para uma das maiores desenvolvedoras de jogos do mundo, com design imersivo e animações envolventes."
+      },
+      "miniblog": {
+        "title": "MiniBlog",
+        "description": "Aplicação para criação e publicação de posts, permitindo interação e compartilhamento de conteúdos diversos."
+      },
+      "githubApi": {
+        "title": "GitHub API",
+        "description": "Projeto que utiliza a API do GitHub para exibir informações detalhadas de usuários e repositórios."
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "location": "São Paulo - SP",
+    "body1": "Olá, meu nome é Wallace, tenho {age} anos e sou Desenvolvedor FullStack com foco em aplicações mobile e web. Tenho experiência com React.js, React Native, Next.js, JavaScript, Node, TypeScript, Tailwind e outras tecnologias. Sou apaixonado por criar componentes reutilizáveis e soluções bem estruturadas.",
+    "body2": "Estou pronto para enfrentar novos desafios e contribuir com soluções que unem clareza, performance e boa experiência de uso."
+  },
+  "contact": {
+    "title": "Vamos trabalhar juntos para deixar",
+    "subtitle": "sua presença online incrível",
+    "button": "Contate-me",
+    "linkedinAlt": "Perfil de Wallace Bezerra no LinkedIn",
+    "instagramAlt": "Perfil de Wallace Bezerra no Instagram",
+    "githubAlt": "Perfil de Wallace Bezerra no GitHub"
+  },
+  "footer": {
+    "logoAlt": "Logo Wallace Bezerra"
+  }
+}
