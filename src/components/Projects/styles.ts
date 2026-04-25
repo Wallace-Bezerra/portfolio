@@ -4,6 +4,29 @@ import styled from "styled-components";
 import { Rubik } from 'next/font/google'
 const rubik = Rubik({ subsets: ['latin'], weight: ["300", '400', '500', '600', '700'] })
 
+/** Texto de fundo traduzível (substitui o SVG com “Projetos” desenhado em paths). */
+export const TitleWatermark = styled.span`
+  display: block;
+  width: 100%;
+  font-family: ${rubik.style.fontFamily}, sans-serif;
+  font-size: clamp(2.25rem, 12vw, 7rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    #2c3844 0%,
+    rgba(44, 56, 68, 0.5) 50%,
+    rgba(44, 56, 68, 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  user-select: none;
+  pointer-events: none;
+`;
+
 export const ContainerProjects = styled.div`
 margin-top: 100px;
 text-align: center;
@@ -12,9 +35,8 @@ text-align: center;
   position: relative;
   display: flex;
   justify-content: center;
-  img{
-    width: 100%;
-  }
+  align-items: center;
+  min-height: clamp(100px, 22vw, 165px);
   h3{
     color: #FFF;
     font-family: ${rubik.style.fontFamily}, sans-serif;
@@ -22,7 +44,14 @@ text-align: center;
     font-weight: 500;
     line-height: normal;
     position: absolute;
-    top: 80px;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    padding-inline: 12px;
+    padding-top: clamp(48px, 9vw, 80px);
   }
 }
 .swiper{
@@ -33,6 +62,9 @@ text-align: center;
     margin-top: initial;
     .title{
       margin-bottom: 20px;
+      h3 {
+        font-size: clamp(28px, 8vw, 40px);
+      }
     }
   }
 `

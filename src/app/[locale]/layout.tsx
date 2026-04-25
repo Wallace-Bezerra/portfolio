@@ -8,6 +8,11 @@ import {
   siteUrl,
   type Locale,
 } from "@/i18n/routing";
+import deMessages from "../../../messages/de.json";
+import enMessages from "../../../messages/en.json";
+import esMessages from "../../../messages/es.json";
+import frMessages from "../../../messages/fr.json";
+import ptMessages from "../../../messages/pt.json";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -24,6 +29,14 @@ type HomeMetadataMessages = {
   keywords: string[];
 };
 
+const metadataMessagesByLocale: Record<Locale, { metadata: { home: HomeMetadataMessages } }> = {
+  pt: ptMessages,
+  en: enMessages,
+  es: esMessages,
+  fr: frMessages,
+  de: deMessages,
+};
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -33,8 +46,7 @@ export async function generateMetadata({
 }: LocaleLayoutProps): Promise<Metadata> {
   const { locale: requestedLocale } = await params;
   const locale = isLocale(requestedLocale) ? requestedLocale : "pt";
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
-  const metadata = messages.metadata.home as HomeMetadataMessages;
+  const metadata = metadataMessagesByLocale[locale].metadata.home;
   const languages = Object.fromEntries(
     locales.map((item) => [localeAlternates[item], `/${item}`])
   );

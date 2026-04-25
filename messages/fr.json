@@ -69,6 +69,10 @@
         "title": "Landing Page de l'App SnapBlend",
         "description": "Landing page responsive créée avec Next.js et Tailwind CSS pour l'app SnapBlend, avec support multilingue et focus sur l'édition créative de photos et les filtres."
       },
+      "strino": {
+        "title": "Landing Page de l'App Strino",
+        "description": "Landing pour Strino : accordeur, accords, théorie, métronome et outils IA. Next.js et Tailwind."
+      },
       "trut": {
         "title": "Landing Page Trut Ambientes Planejados",
         "description": "Landing page développée avec Next.js, un design raffiné et des effets visuels qui mettent en valeur l'élégance des services d'aménagement intérieur de Trut."

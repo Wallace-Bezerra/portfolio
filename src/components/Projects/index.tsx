@@ -11,13 +11,19 @@ import {
   HashNavigation,
   Keyboard,
 } from 'swiper/modules';
-import Image from 'next/image';
 import { Card, CardProject } from './Card';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/variants';
 import { useTranslations } from 'next-intl';
 
 const baseProjects: Omit<CardProject, 'title' | 'description'>[] = [
+  {
+    id: 'strino',
+    src: '/projects/strino.webp',
+    tag: 'UI/UX - NEXT.JS - TAILWIND CSS',
+    urlView: 'https://www.strino.app/',
+    isView: true,
+  },
   {
     id: 'snapblend',
     src: '/projects/snapblend.webp',
@@ -68,7 +74,7 @@ const baseProjects: Omit<CardProject, 'title' | 'description'>[] = [
     urlView: 'https://wallace-bezerra.github.io/HomeYou/',
   },
   {
-    id: 'Wallace9',
+    id: 'blizzard',
     src: '/projects/lp-blizzard-project.jpg',
     tag: 'UI/UX - HTML - SASS - JS',
     urlRepo: 'https://github.com/Wallace-Bezerra/blizzard',
@@ -92,6 +98,7 @@ const baseProjects: Omit<CardProject, 'title' | 'description'>[] = [
 
 export default function Projects() {
   const t = useTranslations('projects');
+  const tNav = useTranslations('navigation');
   const projects: CardProject[] = baseProjects.map((project) => ({
     ...project,
     title: t(`items.${project.id}.title`),
@@ -111,13 +118,7 @@ export default function Projects() {
         whileInView={'show'}
         viewport={{ once: true }}
       >
-        <Image
-          src="/projetos-ilustration.svg"
-          width={720}
-          height={160}
-          priority
-          alt=""
-        />
+        <S.TitleWatermark aria-hidden>{tNav('projects')}</S.TitleWatermark>
         <motion.h3
           variants={fadeIn('up', 0.4)}
           initial={'hidden'}

@@ -69,6 +69,10 @@
         "title": "SnapBlend App Landing Page",
         "description": "Responsive landing page built with Next.js and Tailwind CSS for the SnapBlend app, with multilingual support and a focus on creative photo editing and filters."
       },
+      "strino": {
+        "title": "Strino App Landing Page",
+        "description": "Landing page for Strino: tuner, chords, theory, metronome and AI song tools. Built with Next.js and Tailwind."
+      },
       "trut": {
         "title": "Trut Custom Interiors Landing Page",
         "description": "Landing page built with Next.js, refined design and visual effects that highlight the elegance of Trut's custom interior services."
