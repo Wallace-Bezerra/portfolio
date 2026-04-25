@@ -37,18 +37,18 @@ export const LogoWrap = styled.span`
   flex-shrink: 0;
 `;
 export const Navbar = styled.nav`
-  padding: 20px 80px;
-  max-width: 300px;
+  padding: clamp(14px, 2vw, 20px) clamp(24px, 4vw, 60px);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: ${rubik.style.fontFamily}, sans-serif;
-  gap: 30px;
-  font-size: 18px;
+  gap: clamp(14px, 2.5vw, 30px);
+  font-size: clamp(13px, 1.4vw, 18px);
   border-radius: 39px;
   background: rgba(217, 217, 217, 0.08);
   backdrop-filter: blur(19.5px);
   a {
+    white-space: nowrap;
     transition: all 0.5s;
     &.active {
       transition: all 0.5s;
@@ -60,18 +60,21 @@ export const Navbar = styled.nav`
     }
   }
   @media (max-width: 600px) {
-    padding: 20px 30px;
-    font-size: 14px;
+    padding: 14px 20px;
+    font-size: 13px;
+    gap: 14px;
   }
   @media (max-width: 420px) {
     position: fixed;
-    max-width: initial;
-    font-size: 24px;
+    font-size: clamp(14px, 5vw, 20px);
+    gap: clamp(14px, 7vw, 36px);
     bottom: 0px;
     left: 0px;
     width: 100%;
     border-radius: 0px;
     z-index: 10;
+    padding: 16px clamp(16px, 5vw, 40px);
+    justify-content: center;
   }
 `;
 
@@ -153,7 +156,10 @@ export const LanguageMenu = styled.div<{ $open: boolean }>`
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  min-width: 220px;
+  min-width: 200px;
+  max-height: min(420px, 70dvh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 6px;
   border-radius: 14px;
   border: 1px solid rgba(217, 217, 217, 0.12);
@@ -167,9 +173,18 @@ export const LanguageMenu = styled.div<{ $open: boolean }>`
     $open ? "translateY(0)" : "translateY(-6px)"};
   transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
 
+  /* thin scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(61, 216, 188, 0.25) transparent;
+  &::-webkit-scrollbar { width: 4px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb { background: rgba(61, 216, 188, 0.3); border-radius: 4px; }
+
   @media (max-width: 420px) {
     right: 0;
     left: auto;
+    min-width: 180px;
+    max-height: min(340px, 60dvh);
   }
 `;
 

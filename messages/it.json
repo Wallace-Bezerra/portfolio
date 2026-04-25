@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Wallace Bezerra | Sviluppatore FullStack",
+      "description": "Sviluppatore FullStack specializzato in app, siti web e interfacce moderne con React, React Native, Next.js e TypeScript.",
+      "keywords": [
+        "Wallace Bezerra",
+        "Sviluppatore FullStack",
+        "Sviluppatore React",
+        "Sviluppatore React Native",
+        "Sviluppatore Next.js",
+        "Sviluppo Web",
+        "Sviluppo Mobile",
+        "UI/UX",
+        "TypeScript",
+        "Sao Paulo"
+      ]
+    }
+  },
+  "common": {
+    "loading": "Caricamento..."
+  },
+  "navigation": {
+    "home": "Home",
+    "projects": "Progetti",
+    "about": "Chi sono",
+    "languageSwitcher": "Seleziona lingua",
+    "languages": {
+      "pt": "Portoghese",
+      "en": "Inglese",
+      "es": "Spagnolo",
+      "fr": "Francese",
+      "de": "Tedesco",
+      "it": "Italiano",
+      "nl": "Olandese",
+      "hi": "Hindi",
+      "ja": "Giapponese",
+      "zh": "Cinese"
+    }
+  },
+  "profile": {
+    "eyebrow": "Ciao, sono",
+    "title": "Sviluppatore di App e Siti Web",
+    "description": "Creo app e siti web che le persone amano usare. Combino design, performance e codice ben strutturato per trasformare le idee in esperienze digitali chiare e funzionali.",
+    "contact": "Contattami",
+    "whatsappMessage": "Ciao, vorrei entrare in contatto.",
+    "linkedinAlt": "Profilo LinkedIn di Wallace Bezerra",
+    "profileAlt": "Wallace Bezerra, sviluppatore fullstack"
+  },
+  "section": {
+    "titleTop": "Sviluppo",
+    "titleBottom": "Tecnologia",
+    "goalTitle": "SPINGO IL TUO OBIETTIVO",
+    "goalDescription": "Sviluppo interfacce attraenti e intuitive, pensate per migliorare l'usabilità di ogni prodotto.",
+    "solutionsTitle": "SOLUZIONI CREATIVE | DESIGN RESPONSIVO",
+    "solutionsDescription": "Il tuo sito deve funzionare bene su ogni schermo. Per questo creo esperienze responsive, veloci e pronte per il mondo digitale.",
+    "vscodeDescription": "Seguo costantemente le nuove tecnologie e le best practice per consegnare progetti più completi, moderni ed efficienti."
+  },
+  "tech": {
+    "title": "Tecnologie",
+    "skillsTitlePrefix": "Le mie",
+    "skillsTitle": "Competenze",
+    "sideDescription": "Accanto ci sono le tecnologie e i framework che uso per creare prodotti digitali moderni.",
+    "belowDescription": "Qui sotto ci sono le tecnologie e i framework che uso per creare prodotti digitali moderni."
+  },
+  "projects": {
+    "title": "In evidenza",
+    "actions": {
+      "view": "Vedi",
+      "repo": "Repository"
+    },
+    "items": {
+      "strino": {
+        "title": "Landing Page dell'App Strino",
+        "description": "Landing per Strino: accordatore, accordi, teoria, metronomo e IA per musicisti. Next.js e Tailwind."
+      },
+      "snapblend": {
+        "title": "Landing Page dell'App SnapBlend",
+        "description": "Landing page responsive con Next.js e Tailwind per SnapBlend, con supporto multilingue e focus sul photo editing creativo."
+      },
+      "trut": {
+        "title": "Landing Page Trut Ambienti Personalizzati",
+        "description": "Landing page in Next.js con design raffinato ed effetti visivi che esaltano l'eleganza dei servizi di interior design di Trut."
+      },
+      "storyplus": {
+        "title": "WebApp StoryPlus",
+        "description": "Sistema web responsive con login, piani di pagamento, preferiti, nicchie e sottonicchie, sticker recenti e regolazioni di opacità e colori."
+      },
+      "trinity": {
+        "title": "Landing Page Trinity AI",
+        "description": "Landing page su automazioni AI e chatbot per presentare le soluzioni di Trinity AI con design moderno e interattivo."
+      },
+      "digitalBank": {
+        "title": "Landing Page Digital Bank",
+        "description": "Landing page per una banca digitale, con animazioni fluide ed elementi interattivi per un'esperienza immersiva."
+      },
+      "bikcraft": {
+        "title": "Landing Page Bikcraft",
+        "description": "Landing page per biciclette elettriche ad alte prestazioni, con design pulito, responsive e orientato al prodotto."
+      },
+      "homeyou": {
+        "title": "Landing Page HomeYou",
+        "description": "Landing page elegante per un'agenzia immobiliare, creata per presentare le proprietà in modo moderno e coinvolgente."
+      },
+      "neon": {
+        "title": "Landing Page Banco Neon",
+        "description": "Landing page per una banca digitale con animazioni creative e design professionale per valorizzare l'innovazione del brand."
+      },
+      "blizzard": {
+        "title": "Landing Page Blizzard",
+        "description": "Landing page per uno dei più grandi sviluppatori di giochi al mondo, con design immersivo e animazioni coinvolgenti."
+      },
+      "miniblog": {
+        "title": "MiniBlog",
+        "description": "Applicazione per creare e pubblicare post, con interazione e condivisione di diversi tipi di contenuti."
+      },
+      "githubApi": {
+        "title": "GitHub API",
+        "description": "Progetto che utilizza l'API di GitHub per mostrare informazioni dettagliate su utenti e repository."
+      }
+    }
+  },
+  "about": {
+    "title": "Chi sono",
+    "location": "São Paulo - SP",
+    "body1": "Ciao, mi chiamo Wallace, ho {age} anni e sono uno Sviluppatore FullStack con focus su applicazioni mobile e web. Ho esperienza con React.js, React Native, Next.js, JavaScript, Node, TypeScript, Tailwind e altre tecnologie. Mi appassiona creare componenti riutilizzabili e soluzioni ben strutturate.",
+    "body2": "Sono pronto ad affrontare nuove sfide e a contribuire con soluzioni che uniscono chiarezza, performance e buona esperienza utente."
+  },
+  "contact": {
+    "title": "Lavoriamo insieme per rendere",
+    "subtitle": "la tua presenza online straordinaria",
+    "button": "Contattami",
+    "linkedinAlt": "Profilo LinkedIn di Wallace Bezerra",
+    "instagramAlt": "Profilo Instagram di Wallace Bezerra",
+    "githubAlt": "Profilo GitHub di Wallace Bezerra"
+  },
+  "footer": {
+    "logoAlt": "Logo Wallace Bezerra"
+  }
+}

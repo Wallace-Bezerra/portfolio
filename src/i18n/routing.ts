@@ -1,6 +1,6 @@
 import { defineRouting } from "next-intl/routing";
 
-export const locales = ["pt", "en", "es", "fr", "de"] as const;
+export const locales = ["pt", "en", "es", "fr", "de", "it", "nl", "hi", "ja", "zh"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -13,6 +13,11 @@ export const localeLabels: Record<Locale, string> = {
   es: "Español",
   fr: "Français",
   de: "Deutsch",
+  it: "Italiano",
+  nl: "Nederlands",
+  hi: "हिंदी",
+  ja: "日本語",
+  zh: "中文",
 };
 
 /** Emoji flags for the language menu (no extra assets). */
@@ -22,6 +27,11 @@ export const localeFlags: Record<Locale, string> = {
   es: "🇪🇸",
   fr: "🇫🇷",
   de: "🇩🇪",
+  it: "🇮🇹",
+  nl: "🇳🇱",
+  hi: "🇮🇳",
+  ja: "🇯🇵",
+  zh: "🇨🇳",
 };
 
 export const localeAlternates: Record<Locale, string> = {
@@ -30,6 +40,11 @@ export const localeAlternates: Record<Locale, string> = {
   es: "es",
   fr: "fr",
   de: "de",
+  it: "it",
+  nl: "nl",
+  hi: "hi",
+  ja: "ja",
+  zh: "zh-CN",
 };
 
 export const ogLocales: Record<Locale, string> = {
@@ -38,6 +53,11 @@ export const ogLocales: Record<Locale, string> = {
   es: "es_ES",
   fr: "fr_FR",
   de: "de_DE",
+  it: "it_IT",
+  nl: "nl_NL",
+  hi: "hi_IN",
+  ja: "ja_JP",
+  zh: "zh_CN",
 };
 
 export const routing = defineRouting({

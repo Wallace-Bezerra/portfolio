@@ -30,7 +30,12 @@
       "en": "Englisch",
       "es": "Spanisch",
       "fr": "Französisch",
-      "de": "Deutsch"
+      "de": "Deutsch",
+      "it": "Italienisch",
+      "nl": "Niederländisch",
+      "hi": "Hindi",
+      "ja": "Japanisch",
+      "zh": "Chinesisch"
     }
   },
   "profile": {

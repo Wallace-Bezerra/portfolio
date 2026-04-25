@@ -12,7 +12,12 @@ import deMessages from "../../../messages/de.json";
 import enMessages from "../../../messages/en.json";
 import esMessages from "../../../messages/es.json";
 import frMessages from "../../../messages/fr.json";
+import hiMessages from "../../../messages/hi.json";
+import itMessages from "../../../messages/it.json";
+import jaMessages from "../../../messages/ja.json";
+import nlMessages from "../../../messages/nl.json";
 import ptMessages from "../../../messages/pt.json";
+import zhMessages from "../../../messages/zh.json";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -35,6 +40,11 @@ const metadataMessagesByLocale: Record<Locale, { metadata: { home: HomeMetadataM
   es: esMessages,
   fr: frMessages,
   de: deMessages,
+  it: itMessages,
+  nl: nlMessages,
+  hi: hiMessages,
+  ja: jaMessages,
+  zh: zhMessages,
 };
 
 export function generateStaticParams() {

@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Wallace Bezerra | FullStack Ontwikkelaar",
+      "description": "FullStack-ontwikkelaar gespecialiseerd in apps, websites en moderne interfaces met React, React Native, Next.js en TypeScript.",
+      "keywords": [
+        "Wallace Bezerra",
+        "FullStack Ontwikkelaar",
+        "React Ontwikkelaar",
+        "React Native Ontwikkelaar",
+        "Next.js Ontwikkelaar",
+        "Webontwikkeling",
+        "Mobiele Ontwikkeling",
+        "UI/UX",
+        "TypeScript",
+        "Sao Paulo"
+      ]
+    }
+  },
+  "common": {
+    "loading": "Laden..."
+  },
+  "navigation": {
+    "home": "Home",
+    "projects": "Projecten",
+    "about": "Over mij",
+    "languageSwitcher": "Taal selecteren",
+    "languages": {
+      "pt": "Portugees",
+      "en": "Engels",
+      "es": "Spaans",
+      "fr": "Frans",
+      "de": "Duits",
+      "it": "Italiaans",
+      "nl": "Nederlands",
+      "hi": "Hindi",
+      "ja": "Japans",
+      "zh": "Chinees"
+    }
+  },
+  "profile": {
+    "eyebrow": "Hoi, ik ben",
+    "title": "App- en Website-ontwikkelaar",
+    "description": "Ik bouw apps en websites die mensen graag gebruiken. Ik combineer design, performance en goed gestructureerde code om ideeën te transformeren in heldere, functionele digitale ervaringen.",
+    "contact": "Neem contact op",
+    "whatsappMessage": "Hoi, ik wil graag contact opnemen.",
+    "linkedinAlt": "LinkedIn-profiel van Wallace Bezerra",
+    "profileAlt": "Wallace Bezerra, fullstack ontwikkelaar"
+  },
+  "section": {
+    "titleTop": "Ontwikkeling",
+    "titleBottom": "Technologie",
+    "goalTitle": "IK HELP JE DOEL VOORUIT",
+    "goalDescription": "Ik ontwikkel aantrekkelijke en intuïtieve interfaces, gericht op het verbeteren van de gebruiksvriendelijkheid van elk product.",
+    "solutionsTitle": "CREATIEVE OPLOSSINGEN | RESPONSIEF DESIGN",
+    "solutionsDescription": "Je website moet goed werken op elk scherm. Daarom bouw ik responsieve, snelle ervaringen die klaar zijn voor de digitale wereld.",
+    "vscodeDescription": "Ik volg nieuwe technologieën en best practices om completere, modernere en efficiëntere projecten te leveren."
+  },
+  "tech": {
+    "title": "Technologieën",
+    "skillsTitlePrefix": "Mijn",
+    "skillsTitle": "Vaardigheden",
+    "sideDescription": "Aan de zijkant staan de technologieën en frameworks die ik gebruik om moderne digitale producten te bouwen.",
+    "belowDescription": "Hieronder staan de technologieën en frameworks die ik gebruik om moderne digitale producten te bouwen."
+  },
+  "projects": {
+    "title": "Uitgelicht",
+    "actions": {
+      "view": "Bekijken",
+      "repo": "Repository"
+    },
+    "items": {
+      "strino": {
+        "title": "Strino App Landing Page",
+        "description": "Landing voor Strino: stemmer, akkoorden, theorie, metronoom en AI-tools voor muzikanten. Next.js en Tailwind."
+      },
+      "snapblend": {
+        "title": "SnapBlend App Landing Page",
+        "description": "Responsive landing page met Next.js en Tailwind voor SnapBlend, met meertalige ondersteuning en creatieve fotobewerking."
+      },
+      "trut": {
+        "title": "Trut Maatwerk Interieur Landing Page",
+        "description": "Landing page in Next.js met verfijnd design en visuele effecten die de elegantie van Trut's interieurservices benadrukken."
+      },
+      "storyplus": {
+        "title": "StoryPlus WebApp",
+        "description": "Responsief websysteem met login, betaalplannen, favorieten, niches en subniches, recente stickers en kleur- en opaciteitsinstellingen."
+      },
+      "trinity": {
+        "title": "Trinity AI Landing Page",
+        "description": "Landing page over AI-automatisering en chatbots om Trinity AI's oplossingen te presenteren met modern interactief design."
+      },
+      "digitalBank": {
+        "title": "Digital Bank Landing Page",
+        "description": "Landing page voor een digitale bank, met vloeiende animaties en interactieve elementen voor een meeslepende ervaring."
+      },
+      "bikcraft": {
+        "title": "Bikcraft Landing Page",
+        "description": "Landing page voor hoogwaardige elektrische fietsen, met een clean en responsief design gericht op productpresentatie."
+      },
+      "homeyou": {
+        "title": "HomeYou Landing Page",
+        "description": "Elegante landing page voor een makelaarskantoor, modern en aansprekend gepresenteerd."
+      },
+      "neon": {
+        "title": "Banco Neon Landing Page",
+        "description": "Landing page voor een digitale bank met creatieve animaties en professioneel design om de innovatie van het merk te benadrukken."
+      },
+      "blizzard": {
+        "title": "Blizzard Landing Page",
+        "description": "Landing page voor een van de grootste game-ontwikkelaars ter wereld, met immersief design en meeslepende animaties."
+      },
+      "miniblog": {
+        "title": "MiniBlog",
+        "description": "Applicatie voor het aanmaken en publiceren van berichten, met interactie en delen van verschillende soorten content."
+      },
+      "githubApi": {
+        "title": "GitHub API",
+        "description": "Project dat de GitHub API gebruikt om gedetailleerde informatie over gebruikers en repositories te tonen."
+      }
+    }
+  },
+  "about": {
+    "title": "Over mij",
+    "location": "São Paulo - SP",
+    "body1": "Hoi, mijn naam is Wallace, ik ben {age} jaar oud en FullStack-ontwikkelaar met focus op mobiele en webapplicaties. Ik heb ervaring met React.js, React Native, Next.js, JavaScript, Node, TypeScript, Tailwind en andere technologieën. Ik maak graag herbruikbare componenten en goed gestructureerde oplossingen.",
+    "body2": "Ik ben klaar voor nieuwe uitdagingen en wil bijdragen met oplossingen die helderheid, performance en een goede gebruikerservaring combineren."
+  },
+  "contact": {
+    "title": "Laten we samenwerken om",
+    "subtitle": "je online aanwezigheid te versterken",
+    "button": "Neem contact op",
+    "linkedinAlt": "LinkedIn-profiel van Wallace Bezerra",
+    "instagramAlt": "Instagram-profiel van Wallace Bezerra",
+    "githubAlt": "GitHub-profiel van Wallace Bezerra"
+  },
+  "footer": {
+    "logoAlt": "Wallace Bezerra logo"
+  }
+}

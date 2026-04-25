@@ -10,6 +10,11 @@ const messageLoaders: Record<
   es: () => import("../../messages/es.json"),
   fr: () => import("../../messages/fr.json"),
   de: () => import("../../messages/de.json"),
+  it: () => import("../../messages/it.json"),
+  nl: () => import("../../messages/nl.json"),
+  hi: () => import("../../messages/hi.json"),
+  ja: () => import("../../messages/ja.json"),
+  zh: () => import("../../messages/zh.json"),
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {

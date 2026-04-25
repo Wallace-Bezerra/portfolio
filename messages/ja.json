@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Wallace Bezerra | フルスタック開発者",
+      "description": "React、React Native、Next.js、TypeScriptを使って最新のアプリ・Webサイト・インターフェースを開発するフルスタック開発者。",
+      "keywords": [
+        "Wallace Bezerra",
+        "フルスタック開発者",
+        "React開発者",
+        "React Native開発者",
+        "Next.js開発者",
+        "Web開発",
+        "モバイル開発",
+        "UI/UX",
+        "TypeScript",
+        "サンパウロ"
+      ]
+    }
+  },
+  "common": {
+    "loading": "読み込み中..."
+  },
+  "navigation": {
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "about": "自己紹介",
+    "languageSwitcher": "言語を選択",
+    "languages": {
+      "pt": "ポルトガル語",
+      "en": "英語",
+      "es": "スペイン語",
+      "fr": "フランス語",
+      "de": "ドイツ語",
+      "it": "イタリア語",
+      "nl": "オランダ語",
+      "hi": "ヒンディー語",
+      "ja": "日本語",
+      "zh": "中国語"
+    }
+  },
+  "profile": {
+    "eyebrow": "こんにちは、私は",
+    "title": "アプリ・Webサイト開発者",
+    "description": "使いやすいアプリとWebサイトを作っています。デザイン・パフォーマンス・整理されたコードを組み合わせて、アイデアを明確で機能的なデジタル体験に変えます。",
+    "contact": "お問い合わせ",
+    "whatsappMessage": "こんにちは、ご連絡したいのですが。",
+    "linkedinAlt": "Wallace BezeirraのLinkedInプロフィール",
+    "profileAlt": "Wallace Bezerra、フルスタック開発者"
+  },
+  "section": {
+    "titleTop": "開発",
+    "titleBottom": "テクノロジー",
+    "goalTitle": "あなたの目標を前進させます",
+    "goalDescription": "各製品の使いやすさを高めるために、魅力的で直感的なインターフェースを開発しています。",
+    "solutionsTitle": "クリエイティブな解決策 | レスポンシブデザイン",
+    "solutionsDescription": "Webサイトはどの画面でも機能する必要があります。だからこそ、レスポンシブで速く、デジタル世界に対応した体験を作っています。",
+    "vscodeDescription": "より完成度が高く、現代的で効率的なプロジェクトを提供するために、新しい技術とベストプラクティスを常に追っています。"
+  },
+  "tech": {
+    "title": "テクノロジー",
+    "skillsTitlePrefix": "私の",
+    "skillsTitle": "スキル",
+    "sideDescription": "横に並んでいるのは、現代的なデジタル製品を作るために使う技術とフレームワークです。",
+    "belowDescription": "下に並んでいるのは、現代的なデジタル製品を作るために使う技術とフレームワークです。"
+  },
+  "projects": {
+    "title": "注目作品",
+    "actions": {
+      "view": "見る",
+      "repo": "リポジトリ"
+    },
+    "items": {
+      "strino": {
+        "title": "Strinoアプリ ランディングページ",
+        "description": "Strino向けランディング：チューナー、コード、理論、メトロノーム、AIツール。Next.jsとTailwind。"
+      },
+      "snapblend": {
+        "title": "SnapBlendアプリ ランディングページ",
+        "description": "SnapBlend向けのNext.js・Tailwind製レスポンシブランディング。多言語対応と創造的な写真編集機能。"
+      },
+      "trut": {
+        "title": "Trutインテリア ランディングページ",
+        "description": "Next.jsで制作。Trutのオーダーメイドインテリアサービスを上品なデザインで紹介。"
+      },
+      "storyplus": {
+        "title": "StoryPlus WebApp",
+        "description": "ログイン・決済プラン・お気に入り・ニッチとサブニッチを備えたレスポンシブWebシステム。"
+      },
+      "trinity": {
+        "title": "Trinity AI ランディングページ",
+        "description": "AIオートメーションとチャットボットのランディング。Trinity AIのソリューションをモダンなデザインで紹介。"
+      },
+      "digitalBank": {
+        "title": "デジタルバンク ランディングページ",
+        "description": "滑らかなアニメーションとインタラクティブな要素で没入感を演出するデジタルバンクのランディング。"
+      },
+      "bikcraft": {
+        "title": "Bikcraft ランディングページ",
+        "description": "高性能電動自転車向けのクリーンでレスポンシブなランディング。"
+      },
+      "homeyou": {
+        "title": "HomeYou ランディングページ",
+        "description": "不動産会社向けのエレガントなランディング。物件をモダンに紹介。"
+      },
+      "neon": {
+        "title": "Banco Neon ランディングページ",
+        "description": "クリエイティブなアニメーションとプロのデザインで差別化するデジタルバンクのランディング。"
+      },
+      "blizzard": {
+        "title": "Blizzard ランディングページ",
+        "description": "世界最大のゲーム開発会社向けの没入型ランディングページ。"
+      },
+      "miniblog": {
+        "title": "MiniBlog",
+        "description": "投稿を作成・公開するアプリ。さまざまなコンテンツのインタラクションと共有が可能。"
+      },
+      "githubApi": {
+        "title": "GitHub API",
+        "description": "GitHub APIを使ってユーザーとリポジトリの詳細情報を表示するプロジェクト。"
+      }
+    }
+  },
+  "about": {
+    "title": "自己紹介",
+    "location": "サンパウロ - SP",
+    "body1": "こんにちは、Wallaceといいます。{age}歳で、モバイルとWebアプリに特化したフルスタック開発者です。React.js、React Native、Next.js、JavaScript、Node、TypeScript、Tailwindなど多くの技術の経験があります。再利用可能なコンポーネントと整理されたソリューションを作ることが好きです。",
+    "body2": "新しい挑戦に取り組み、明確さ・パフォーマンス・良いユーザー体験を兼ね備えたソリューションに貢献する準備ができています。"
+  },
+  "contact": {
+    "title": "一緒に取り組んで",
+    "subtitle": "あなたのオンラインプレゼンスを輝かせましょう",
+    "button": "お問い合わせ",
+    "linkedinAlt": "Wallace BezeirraのLinkedInプロフィール",
+    "instagramAlt": "Wallace BezeirraのInstagramプロフィール",
+    "githubAlt": "Wallace BezeirraのGitHubプロフィール"
+  },
+  "footer": {
+    "logoAlt": "Wallace Bezeirraのロゴ"
+  }
+}

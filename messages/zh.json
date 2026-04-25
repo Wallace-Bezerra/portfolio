@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Wallace Bezerra | 全栈开发者",
+      "description": "专注于使用 React、React Native、Next.js 和 TypeScript 构建现代应用、网站及界面的全栈开发者。",
+      "keywords": [
+        "Wallace Bezerra",
+        "全栈开发者",
+        "React 开发者",
+        "React Native 开发者",
+        "Next.js 开发者",
+        "Web 开发",
+        "移动开发",
+        "UI/UX",
+        "TypeScript",
+        "圣保罗"
+      ]
+    }
+  },
+  "common": {
+    "loading": "加载中..."
+  },
+  "navigation": {
+    "home": "首页",
+    "projects": "项目",
+    "about": "关于我",
+    "languageSwitcher": "选择语言",
+    "languages": {
+      "pt": "葡萄牙语",
+      "en": "英语",
+      "es": "西班牙语",
+      "fr": "法语",
+      "de": "德语",
+      "it": "意大利语",
+      "nl": "荷兰语",
+      "hi": "印地语",
+      "ja": "日语",
+      "zh": "中文"
+    }
+  },
+  "profile": {
+    "eyebrow": "你好，我是",
+    "title": "应用与网站开发者",
+    "description": "我构建人们喜欢使用的应用和网站。将设计、性能与结构良好的代码结合，把想法转化为清晰、实用的数字体验。",
+    "contact": "联系我",
+    "whatsappMessage": "你好，我想取得联系。",
+    "linkedinAlt": "Wallace Bezerra 的 LinkedIn 主页",
+    "profileAlt": "Wallace Bezerra，全栈开发者"
+  },
+  "section": {
+    "titleTop": "开发",
+    "titleBottom": "技术",
+    "goalTitle": "助力您的目标",
+    "goalDescription": "我开发美观直观的界面，旨在提升每款产品的易用性。",
+    "solutionsTitle": "创意解决方案 | 响应式设计",
+    "solutionsDescription": "您的网站需要在每种屏幕上都运行良好。因此，我构建响应式、快速且面向数字世界的体验。",
+    "vscodeDescription": "我持续关注新技术和最佳实践，以交付更完整、更现代、更高效的项目。"
+  },
+  "tech": {
+    "title": "技术栈",
+    "skillsTitlePrefix": "我的",
+    "skillsTitle": "技能",
+    "sideDescription": "旁边列出的是我用于构建现代数字产品的技术和框架。",
+    "belowDescription": "下方列出的是我用于构建现代数字产品的技术和框架。"
+  },
+  "projects": {
+    "title": "精选项目",
+    "actions": {
+      "view": "查看",
+      "repo": "仓库"
+    },
+    "items": {
+      "strino": {
+        "title": "Strino 应用落地页",
+        "description": "Strino 音乐 App 落地页：调音器、和弦、乐理、节拍器和 AI 工具。Next.js 与 Tailwind。"
+      },
+      "snapblend": {
+        "title": "SnapBlend 应用落地页",
+        "description": "为 SnapBlend 开发的响应式落地页，支持多语言，专注创意照片编辑。Next.js 与 Tailwind。"
+      },
+      "trut": {
+        "title": "Trut 定制室内设计落地页",
+        "description": "Next.js 开发，精致设计和视觉效果，展示 Trut 定制家居服务的优雅。"
+      },
+      "storyplus": {
+        "title": "StoryPlus WebApp",
+        "description": "含登录、付费计划、收藏、细分领域、近期贴纸和颜色透明度调整的响应式 Web 系统。"
+      },
+      "trinity": {
+        "title": "Trinity AI 落地页",
+        "description": "关于 AI 自动化和聊天机器人的落地页，以现代交互设计展示 Trinity AI 解决方案。"
+      },
+      "digitalBank": {
+        "title": "数字银行落地页",
+        "description": "数字银行落地页，流畅动画和互动元素，打造沉浸式体验。"
+      },
+      "bikcraft": {
+        "title": "Bikcraft 落地页",
+        "description": "高性能电动自行车落地页，简洁响应式设计，聚焦产品展示。"
+      },
+      "homeyou": {
+        "title": "HomeYou 落地页",
+        "description": "房产公司优雅落地页，以现代方式展示房产信息。"
+      },
+      "neon": {
+        "title": "Banco Neon 落地页",
+        "description": "数字银行落地页，创意动画和专业设计，彰显品牌创新。"
+      },
+      "blizzard": {
+        "title": "Blizzard 落地页",
+        "description": "全球最大游戏开发商之一的落地页，沉浸式设计与精彩动画。"
+      },
+      "miniblog": {
+        "title": "MiniBlog",
+        "description": "用于创建和发布帖子的应用，支持互动和多类内容分享。"
+      },
+      "githubApi": {
+        "title": "GitHub API",
+        "description": "利用 GitHub API 展示用户和仓库详细信息的项目。"
+      }
+    }
+  },
+  "about": {
+    "title": "关于我",
+    "location": "圣保罗 - SP",
+    "body1": "你好，我叫 Wallace，{age} 岁，是一名专注于移动和 Web 应用的全栈开发者。我有使用 React.js、React Native、Next.js、JavaScript、Node、TypeScript、Tailwind 等技术的经验，热衷于构建可复用的组件和结构良好的解决方案。",
+    "body2": "我随时准备迎接新挑战，致力于提供兼具清晰度、性能和良好用户体验的解决方案。"
+  },
+  "contact": {
+    "title": "让我们携手",
+    "subtitle": "打造令人印象深刻的线上形象",
+    "button": "联系我",
+    "linkedinAlt": "Wallace Bezerra 的 LinkedIn 主页",
+    "instagramAlt": "Wallace Bezerra 的 Instagram 主页",
+    "githubAlt": "Wallace Bezerra 的 GitHub 主页"
+  },
+  "footer": {
+    "logoAlt": "Wallace Bezerra 标志"
+  }
+}
