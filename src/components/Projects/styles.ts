@@ -41,7 +41,7 @@ export const SwiperWrapper = styled(motion.div)`
     transform: scale(1) !important;
     margin-inline: 40px;
     @media (max-width: 600px){
-      margin-inline: 20px;
+      margin-inline: 0;
     }
 `
 export const ContainerSwiper = styled.div`

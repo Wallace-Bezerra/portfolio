@@ -89,7 +89,9 @@ export const Header = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <Image src="/logo.svg" width="126" height="42" alt="Wallace Bezerra" priority />
+      <S.LogoWrap>
+        <Image src="/logo.svg" width="126" height="42" alt="Wallace Bezerra" priority />
+      </S.LogoWrap>
       <S.Navbar>
         <Link
           to="home"

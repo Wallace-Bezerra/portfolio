@@ -3,7 +3,7 @@ import  styled  from "styled-components";
 
 export const ContainerFooter = styled.footer`
   position: absolute;
-  padding-left: 40px;
+  padding-inline: 30px;
   bottom: 0px;
   left: 0px;
   background-color: #171E29;

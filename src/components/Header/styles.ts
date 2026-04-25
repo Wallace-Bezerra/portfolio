@@ -23,8 +23,18 @@ export const ContainerHeader = styled(motion.header)`
   }
   @media (max-width: 420px) {
     justify-content: space-between;
+    align-items: center;
     padding-block: 12px;
+    padding-inline: 30px;
   }
+`;
+
+/** Evita desalinhamento vertical por baseline do wrapper do Next/Image */
+export const LogoWrap = styled.span`
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  flex-shrink: 0;
 `;
 export const Navbar = styled.nav`
   padding: 20px 80px;
@@ -68,16 +78,14 @@ export const Navbar = styled.nav`
 export const LanguageWrap = styled.div`
   position: relative;
   flex-shrink: 0;
+  align-self: center;
   font-family: ${rubik.style.fontFamily}, sans-serif;
-
-  @media (max-width: 420px) {
-    margin-bottom: 74px;
-  }
 `;
 
 export const LanguageToggle = styled.button<{ $open: boolean }>`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 8px 12px;
   border-radius: 12px;
@@ -86,6 +94,7 @@ export const LanguageToggle = styled.button<{ $open: boolean }>`
   backdrop-filter: blur(12px);
   color: #e8edf5;
   cursor: pointer;
+  line-height: 1;
   transition: border-color 0.25s, background 0.25s, color 0.25s;
 
   &:hover,
