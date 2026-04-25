@@ -68,14 +68,7 @@ const baseProjects: Omit<CardProject, 'title' | 'description'>[] = [
     urlView: 'https://wallace-bezerra.github.io/HomeYou/',
   },
   {
-    id: 'neon',
-    src: '/projects/lp-neon-project.jpg',
-    tag: 'UI/UX - HTML - SASS - JS',
-    urlRepo: 'https://github.com/Wallace-Bezerra/landingPage-Neon',
-    urlView: 'https://lp-neon-bank.vercel.app/',
-  },
-  {
-    id: 'blizzard',
+    id: 'Wallace9',
     src: '/projects/lp-blizzard-project.jpg',
     tag: 'UI/UX - HTML - SASS - JS',
     urlRepo: 'https://github.com/Wallace-Bezerra/blizzard',
